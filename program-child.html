@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>こどもスクール | 太陽フィットネスクラブ | 山口県・島根県のスイミングスクール</title>
+  <meta name="description" content="【太陽フィットネスクラブ こどもスクール】のご紹介。ベビー・幼児から小中学生向けの水泳指導。独自の24段階進級テスト制度で、楽しく泳力を伸ばし、強い心と体を育てます。">
+  <meta name="keywords" content="太陽フィットネスクラブ,こどもスクール,水泳教室,スイミングスクール,24段階テスト,幼児水泳,山口県,島根県">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    .p-page-hero {
+      position: relative;
+      height: 360px;
+      background: linear-gradient(135deg, rgba(13, 109, 192, 0.9) 0%, rgba(15, 23, 42, 0.8) 100%), 
+                  url('https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      color: var(--color-bg-white);
+      z-index: 1;
+    }
+    
+    .p-page-hero__wave {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      line-height: 0;
+      z-index: 3;
+    }
+    
+    .p-page-hero__wave svg {
+      width: 100%;
+      height: 40px;
+      fill: var(--color-bg-base);
+    }
+
+    .p-class-card {
+      background-color: var(--color-bg-white);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition-normal);
+    }
+
+    .p-class-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .p-step-badge {
+      background: var(--grad-splashtop);
+      color: white;
+      font-family: var(--font-num);
+      font-weight: 800;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+     HEADER SECTION (Sticky Glassmorphic Nav)
+     ========================================================================== -->
+  <header class="l-header" id="header">
+    <div class="l-container l-header__container">
+      <div class="l-header__logo">
+        <a href="./index.html">
+          <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.65rem; letter-spacing: -0.02em; color: var(--color-dark); display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-solid fa-sun" style="color: var(--color-iwami); filter: drop-shadow(0 2px 8px rgba(255, 126, 65, 0.4));"></i>
+            TAIYO<span style="color: var(--color-primary); font-weight: 500; font-size: 0.95rem; letter-spacing: 0.1em; border-left: 2px solid var(--color-border); padding-left: 0.5rem; margin-left: 0.25rem;">FITNESS CLUB</span>
+          </span>
+        </a>
+      </div>
+      
+      <nav class="l-header__nav" aria-label="メインナビゲーション">
+        <ul class="p-global-nav">
+          <li class="p-global-nav__item">
+            <a href="./index.html" class="p-global-nav__link">ホーム</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./greeting.html" class="p-global-nav__link">代表挨拶</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link">店舗一覧 <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./shop-hagi.html">萩店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-nagato.html">長門店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-hofu.html">防府店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-iwami.html">石見店</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link" style="color: var(--color-primary);">プログラム <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./program-child.html" style="color: var(--color-primary);">こどもスクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./program-adult.html">大人スクール</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./campaign.html" class="p-global-nav__link">キャンペーン</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./blog.html" class="p-global-nav__link">スタッフブログ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="./recruit.html" class="l-header__cta">
+        採用情報 <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem; font-size: 0.8rem;"></i>
+      </a>
+
+      <!-- Mobile Hamburger button -->
+      <div class="l-header__hamburger" id="hamburger" aria-expanded="false" aria-label="メニューを開閉する">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <nav class="p-mobile-nav" id="mobile-nav" aria-label="モバイルナビゲーション">
+    <ul class="p-mobile-nav__list">
+      <li><a href="./index.html" class="p-mobile-nav__link">ホーム</a></li>
+      <li><a href="./greeting.html" class="p-mobile-nav__link">代表挨拶</a></li>
+      <li>
+        <span class="p-mobile-nav__link" style="opacity: 0.5; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-top: 1rem;">店舗一覧</span>
+        <ul class="p-mobile-nav__sublist">
+          <li><a href="./shop-hagi.html" class="p-mobile-nav__sublink">萩店</a></li>
+          <li><a href="./shop-nagato.html" class="p-mobile-nav__sublink">長門店</a></li>
+          <li><a href="./shop-hofu.html" class="p-mobile-nav__sublink">防府店</a></li>
+          <li><a href="./shop-iwami.html" class="p-mobile-nav__sublink">石見店</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="p-mobile-nav__link" style="opacity: 0.5; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-top: 1rem;">プログラム</span>
+        <ul class="p-mobile-nav__sublist">
+          <li><a href="./program-child.html" class="p-mobile-nav__sublink" style="color: var(--color-primary);">こどもスクール</a></li>
+          <li><a href="./program-adult.html" class="p-mobile-nav__sublink">大人スクール</a></li>
+        </ul>
+      </li>
+      <li><a href="./campaign.html" class="p-mobile-nav__link">キャンペーン</a></li>
+      <li><a href="./blog.html" class="p-mobile-nav__link">ブログ</a></li>
+      <li><a href="./recruit.html" class="p-mobile-nav__link" style="color: var(--color-nagato);">採用情報</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==========================================================================
+     PAGE HERO (Greeting Header)
+     ========================================================================== -->
+  <section class="p-page-hero">
+    <div class="l-container">
+      <div style="max-width: 600px;">
+        <span style="font-family: var(--font-head); font-weight: 800; letter-spacing: 0.15em; color: var(--color-iwami); display: block; margin-bottom: 0.5rem; text-transform: uppercase;">Kids Swimming School</span>
+        <h1 style="font-size: 3rem; font-weight: 900; line-height: 1.2; margin-bottom: 1rem; color: var(--color-bg-white);">こどもスクール紹介</h1>
+        <p style="opacity: 0.9; font-size: 1.05rem;">水嫌いなお子さまから競泳育成まで。24段階で楽しく着実に進化。</p>
+      </div>
+    </div>
+    <div class="p-page-hero__wave">
+      <svg viewBox="0 0 1440 40" preserveAspectRatio="none">
+        <path d="M0,15L120,18.3C240,22,480,28,720,28.3C960,28,1200,22,1320,18.3L1440,15L1440,40L1320,40C1200,40,960,40,720,40C480,40,240,40,120,40L0,40Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     INTRO VALUES
+     ========================================================================== -->
+  <section style="padding: 5rem 0;">
+    <div class="l-container">
+      
+      <div class="l-grid l-grid--2col u-fade-up" style="gap: 3.5rem; align-items: center; margin-bottom: 5rem;">
+        <div>
+          <span style="font-family: var(--font-head); font-weight: 800; color: var(--color-primary); font-size: 0.95rem; letter-spacing: 0.1em; display: block; margin-bottom: 0.5rem;">Values of Swimming</span>
+          <h2 style="font-size: 2.25rem; font-weight: 900; color: var(--color-dark); margin-bottom: 1.5rem;">なぜ水泳が<br><span style="color: var(--color-primary);">子どもの成長</span>に良いのか？</h2>
+          <p style="color: var(--color-slate-gray); margin-bottom: 1.5rem;">
+            水泳は全身運動であり、左右対称にバランスよく筋肉を鍛えられます。水圧によって呼吸器官が自然に鍛えられるため、ぜんそくやカゼをひきにくい「強い身体」をつくるのに最適です。
+          </p>
+          <p style="color: var(--color-slate-gray);">
+            また、太陽フィットネスクラブでは「褒めて伸ばす」指導方針により、テストをクリアするごとの「達成感」や「自信」をはぐくみます。集団レッスンを通じてお友だちを思いやる心、ルールを守る心といった社会性も自然と身についていきます。
+          </p>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80" alt="笑顔で泳ぐ子ども" style="width: 100%; height: 350px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+        </div>
+      </div>
+
+      <!-- Class Grids -->
+      <div class="c-section-title u-fade-up">
+        <span class="c-section-title__sub">Our Classes</span>
+        <h2 class="c-section-title__main">コース一覧</h2>
+      </div>
+
+      <div class="l-grid l-grid--3col u-fade-up" style="gap: 2.5rem; margin-bottom: 6rem;">
+        <!-- Class 1 -->
+        <article class="p-class-card">
+          <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=400&q=80" alt="ベビースイミング" style="height: 200px; width: 100%; object-fit: cover;">
+          <div style="padding: 2rem;">
+            <span style="font-size: 0.8rem; font-weight: 800; background-color: rgba(13, 109, 192, 0.08); color: var(--color-primary); padding: 0.25rem 0.75rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">生後6ヶ月〜就学前</span>
+            <h3 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 1rem;">親子ベビー・乳幼児コース</h3>
+            <p style="font-size: 0.9rem; color: var(--color-slate-gray);">
+              お母さん、お父さんと一緒に水に入る安心感の中で、水の浮力を楽しみます。心身の発育とバランス感覚を早期に育み、ぐっすり眠る睡眠習慣も定着します。
+            </p>
+          </div>
+        </article>
+
+        <!-- Class 2 -->
+        <article class="p-class-card">
+          <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=400&q=80" alt="幼児・小学生スクール" style="height: 200px; width: 100%; object-fit: cover;">
+          <div style="padding: 2rem;">
+            <span style="font-size: 0.8rem; font-weight: 800; background-color: rgba(226, 75, 139, 0.08); color: var(--color-nagato); padding: 0.25rem 0.75rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">就学前〜小学生</span>
+            <h3 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 1rem;">幼児・児童スイミングコース</h3>
+            <p style="font-size: 0.9rem; color: var(--color-slate-gray);">
+              水嫌い克服の基礎水慣れから、クロール、背泳ぎなどの基本４泳法の習得を目指します。レベル別の少人数制レッスンだから、無理なく泳げるようになります。
+            </p>
+          </div>
+        </article>
+
+        <!-- Class 3 -->
+        <article class="p-class-card">
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=400&q=80" alt="中学生・育成スクール" style="height: 200px; width: 100%; object-fit: cover;">
+          <div style="padding: 2rem;">
+            <span style="font-size: 0.8rem; font-weight: 800; background-color: rgba(0, 194, 146, 0.08); color: var(--color-hofu); padding: 0.25rem 0.75rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem;">小・中学生・育成推薦</span>
+            <h3 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 1rem;">小・中学生＆選手育成クラス</h3>
+            <p style="font-size: 0.9rem; color: var(--color-slate-gray);">
+              4泳法のさらなるフォーム美化、タイム測定、持久力向上に取り組みます。選手育成クラスでは、県大会や全国大会出場を目指して高度なトレーニングを行います。
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- 24 Testing System -->
+      <div style="background-color: var(--color-bg-white); border-radius: var(--radius-md); padding: 4rem; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); margin-bottom: 6rem;" class="u-fade-up">
+        <div style="max-width: 700px; margin: 0 auto 3rem auto; text-align: center;">
+          <span style="font-family: var(--font-head); font-weight: 800; color: var(--color-primary); font-size: 0.95rem; letter-spacing: 0.15em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">Evolution System</span>
+          <h2 style="font-size: 2.25rem; font-weight: 900; color: var(--color-dark); margin-bottom: 1rem;">やる気が続く！「独自の24段階進級テスト」</h2>
+          <p style="color: var(--color-slate-gray);">
+            細かくステップ分けされた太陽フィットネスクラブ独自の24段階テスト。毎月末に行われるテストで、合格ワッペンがもらえます。スモールステップだからモチベーションが途切れず、自己肯定感がはぐくまれます。
+          </p>
+        </div>
+
+        <div class="l-grid l-grid--4col" style="gap: 2rem;">
+          <!-- Step 1 -->
+          <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem;">
+            <div class="p-step-badge">24</div>
+            <div>
+              <h4 style="font-weight: 800; font-size: 1.05rem; margin-bottom: 0.5rem;">基礎・水慣れ段階</h4>
+              <p style="font-size: 0.85rem; color: var(--color-slate-gray);">水面に顔をつける、水中で息を吐き出す、プールの底に足をつく等、水の楽しさに慣れる基礎ステップ。</p>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem;">
+            <div class="p-step-badge">18</div>
+            <div>
+              <h4 style="font-weight: 800; font-size: 1.05rem; margin-bottom: 0.5rem;">けのび・バタ足段階</h4>
+              <p style="font-size: 0.85rem; color: var(--color-slate-gray);">力を抜いて水面に浮く「けのび」から、力強く進むバタ足、正しいキック動作と姿勢を身につけます。</p>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem;">
+            <div class="p-step-badge">12</div>
+            <div>
+              <h4 style="font-weight: 800; font-size: 1.05rem; margin-bottom: 0.5rem;">クロール・背泳ぎ段階</h4>
+              <p style="font-size: 0.85rem; color: var(--color-slate-gray);">クロールでの腕の回し方、正しい横向きの呼吸動作、背泳ぎなど基本泳法をしっかり形にします。</p>
+            </div>
+          </div>
+          <!-- Step 4 -->
+          <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem;">
+            <div class="p-step-badge">1</div>
+            <div>
+              <h4 style="font-weight: 800; font-size: 1.05rem; margin-bottom: 0.5rem;">4泳法完成・スピード測定</h4>
+              <p style="font-size: 0.85rem; color: var(--color-slate-gray);">平泳ぎ・バタフライを含む4泳法をすべてマスターし、一定時間の耐久やスピード記録更新に挑みます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Safety & Support -->
+      <div class="l-grid l-grid--2col u-fade-up" style="gap: 3.5rem; align-items: center;">
+        <div>
+          <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&w=800&q=80" alt="安全指導の様子" style="width: 100%; height: 350px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+        </div>
+        <div>
+          <span style="font-family: var(--font-head); font-weight: 800; color: var(--color-nagato); font-size: 0.95rem; letter-spacing: 0.1em; display: block; margin-bottom: 0.5rem;">Safety Measures</span>
+          <h2 style="font-size: 2.25rem; font-weight: 900; color: var(--color-dark); margin-bottom: 1.5rem;">お子さまを守る<br>徹底した安全・安心体制</h2>
+          <ul style="display: flex; flex-direction: column; gap: 1rem; color: var(--color-slate-gray);">
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--color-nagato); margin-top: 0.25rem;"></i>
+              <span><strong>有資格コーチ常駐・監視体制</strong><br>指導中はお子さまの視線から外れることなく、専任の監視員をプールサイドに配置。</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--color-nagato); margin-top: 0.25rem;"></i>
+              <span><strong>安全設計のプール水深</strong><br>幼児レッスンではプール内に赤い安全台（フロア）を沈め、安全な水深を確保します。</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--color-nagato); margin-top: 0.25rem;"></i>
+              <span><strong>安心のスクールバス運行</strong><br>各店舗で無料送迎バスを運行。GPS管理や丁寧な添乗員同行でお子さまの安全な通学をサポート。</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     FOOTER SECTION (Modern Glass Columns)
+     ========================================================================== -->
+  <footer class="l-footer">
+    <div class="l-container">
+      <div class="l-footer__top">
+        <div class="l-footer__about">
+          <div class="l-footer__logo">
+            <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.85rem; letter-spacing: -0.02em; color: var(--color-bg-white); display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+              <i class="fa-solid fa-sun" style="color: var(--color-iwami);"></i>
+              TAIYO
+            </span>
+          </div>
+          <p class="l-footer__desc">
+            株式会社太陽コミュニケーションズは、スイミングスクールおよび総合フィットネスクラブの運営を通じて、山口・島根エリアの健康づくりと心豊かなライフスタイルの創出に貢献します。
+          </p>
+        </div>
+
+        <div class="l-footer__grid">
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-hagi">萩店</h4>
+            <address class="l-footer__address">
+              〒758-0063<br>
+              山口県萩市大字山田字東沖田4286番地
+            </address>
+            <a href="tel:0838-25-5656" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0838-25-5656</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-hagi.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-nagato">長門店</h4>
+            <address class="l-footer__address">
+              〒759-4101<br>
+              山口県長門市東深川1394-1
+            </address>
+            <a href="tel:0837-22-1600" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0837-22-1600</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-nagato.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-hofu">防府店</h4>
+            <address class="l-footer__address">
+              〒747-0849<br>
+              山口県防府市西仁井令1丁目12-7
+            </address>
+            <a href="tel:0835-28-7588" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0835-28-7588</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-hofu.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-iwami">石見店</h4>
+            <address class="l-footer__address">
+              〒698-0024<br>
+              島根県益田市駅前町37-13
+            </address>
+            <a href="tel:0856-23-5581" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0856-23-5581</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-iwami.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-footer__bottom">
+        <small class="l-footer__copyright">&copy; 株式会社太陽コミュニケーションズ 太陽フィットネスクラブ. All Rights Reserved.</small>
+        
+        <div class="l-footer__sns">
+          <a href="#" class="l-footer__sns-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="color: var(--color-bg-white);"></i></a>
+          <a href="#" class="l-footer__sns-link" aria-label="Instagram"><i class="fa-brands fa-instagram" style="color: var(--color-bg-white);"></i></a>
+          <a href="#" class="l-footer__sns-link" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color: var(--color-bg-white);"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>長門店 | 太陽フィットネスクラブ | 山口県長門市のスイミングスクール＆スポーツジム</title>
+  <meta name="description" content="【太陽フィットネスクラブ 長門店】の店舗概要、コース・料金表、スクール時間割などのご紹介。こどもの可能性を引き出す丁寧なスイミングスクール指導体制が自慢です。">
+  <meta name="keywords" content="太陽フィットネスクラブ,長門店,スイミングスクール,長門市,フィットネス,料金表,時間割">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* Page specific branch override */
+    :root {
+      --brand-color: var(--color-nagato);
+      --brand-grad: var(--grad-nagato);
+      --brand-shadow: var(--shadow-glow-nagato);
+    }
+    
+    .p-page-hero {
+      position: relative;
+      height: 400px;
+      background: linear-gradient(135deg, rgba(226, 75, 139, 0.9) 0%, rgba(15, 23, 42, 0.8) 100%), 
+                  url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      color: var(--color-bg-white);
+      z-index: 1;
+    }
+    
+    .p-page-hero__wave {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      line-height: 0;
+      z-index: 3;
+    }
+    
+    .p-page-hero__wave svg {
+      width: 100%;
+      height: 40px;
+      fill: var(--color-bg-base);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+     HEADER SECTION (Sticky Glassmorphic Nav)
+     ========================================================================== -->
+  <header class="l-header" id="header">
+    <div class="l-container l-header__container">
+      <div class="l-header__logo">
+        <a href="./index.html">
+          <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.65rem; letter-spacing: -0.02em; color: var(--color-dark); display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-solid fa-sun" style="color: var(--color-iwami); filter: drop-shadow(0 2px 8px rgba(255, 126, 65, 0.4));"></i>
+            TAIYO<span style="color: var(--color-primary); font-weight: 500; font-size: 0.95rem; letter-spacing: 0.1em; border-left: 2px solid var(--color-border); padding-left: 0.5rem; margin-left: 0.25rem;">FITNESS CLUB</span>
+          </span>
+        </a>
+      </div>
+      
+      <nav class="l-header__nav" aria-label="メインナビゲーション">
+        <ul class="p-global-nav">
+          <li class="p-global-nav__item">
+            <a href="./index.html" class="p-global-nav__link">ホーム</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./greeting.html" class="p-global-nav__link">代表挨拶</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link">店舗一覧 <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./shop-hagi.html">萩店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-nagato.html" style="color: var(--color-nagato);">長門店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-hofu.html">防府店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-iwami.html">石見店</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link">プログラム <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./program-child.html">こどもスクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./program-adult.html">大人スクール</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./campaign.html" class="p-global-nav__link">キャンペーン</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./blog.html" class="p-global-nav__link">スタッフブログ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="./recruit.html" class="l-header__cta" style="background: var(--brand-grad); box-shadow: var(--brand-shadow);">
+        採用情報 <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem; font-size: 0.8rem;"></i>
+      </a>
+
+      <!-- Mobile Hamburger button -->
+      <div class="l-header__hamburger" id="hamburger" aria-expanded="false" aria-label="メニューを開閉する">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <nav class="p-mobile-nav" id="mobile-nav" aria-label="モバイルナビゲーション">
+    <ul class="p-mobile-nav__list">
+      <li><a href="./index.html" class="p-mobile-nav__link">ホーム</a></li>
+      <li><a href="./greeting.html" class="p-mobile-nav__link">代表挨拶</a></li>
+      <li>
+        <span class="p-mobile-nav__link" style="opacity: 0.5; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-top: 1rem;">店舗一覧</span>
+        <ul class="p-mobile-nav__sublist">
+          <li><a href="./shop-hagi.html" class="p-mobile-nav__sublink">萩店</a></li>
+          <li><a href="./shop-nagato.html" class="p-mobile-nav__sublink" style="color: var(--color-nagato);">長門店</a></li>
+          <li><a href="./shop-hofu.html" class="p-mobile-nav__sublink">防府店</a></li>
+          <li><a href="./shop-iwami.html" class="p-mobile-nav__sublink">石見店</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="p-mobile-nav__link" style="opacity: 0.5; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-top: 1rem;">プログラム</span>
+        <ul class="p-mobile-nav__sublist">
+          <li><a href="./program-child.html" class="p-mobile-nav__sublink">こどもスクール</a></li>
+          <li><a href="./program-adult.html" class="p-mobile-nav__sublink">大人スクール</a></li>
+        </ul>
+      </li>
+      <li><a href="./campaign.html" class="p-mobile-nav__link">キャンペーン</a></li>
+      <li><a href="./blog.html" class="p-mobile-nav__link">ブログ</a></li>
+      <li><a href="./recruit.html" class="p-mobile-nav__link" style="color: var(--color-nagato);">採用情報</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==========================================================================
+     PAGE HERO (Branch Hero Header)
+     ========================================================================== -->
+  <section class="p-page-hero">
+    <div class="l-container">
+      <div style="max-width: 600px;">
+        <span style="font-family: var(--font-head); font-weight: 800; letter-spacing: 0.15em; color: var(--color-iwami); display: block; margin-bottom: 0.5rem; text-transform: uppercase;">Branch Store</span>
+        <h1 style="font-size: 3rem; font-weight: 900; line-height: 1.2; margin-bottom: 1rem; color: var(--color-bg-white);">太陽フィットネスクラブ 長門店</h1>
+        <p style="opacity: 0.9; font-size: 1.05rem;">〒759-4101 山口県長門市東深川1394-1 <br><i class="fa-solid fa-phone" style="margin-right: 0.25rem;"></i> Tel: 0837-22-1600</p>
+      </div>
+    </div>
+    <div class="p-page-hero__wave">
+      <svg viewBox="0 0 1440 40" preserveAspectRatio="none">
+        <path d="M0,15L120,18.3C240,22,480,28,720,28.3C960,28,1200,22,1320,18.3L1440,15L1440,40L1320,40C1200,40,960,40,720,40C480,40,240,40,120,40L0,40Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     INTERACTIVE TAB COMPONENT (Store Consolidated details)
+     ========================================================================== -->
+  <section style="padding: 4rem 0;">
+    <div class="l-container">
+      
+      <!-- Sub Tab Nav Switchers -->
+      <div class="p-sub-tabs" style="--brand-color: var(--color-nagato); --brand-grad: var(--grad-nagato);">
+        <button class="p-sub-tabs__btn is-active" data-tab="overview">店舗概要</button>
+        <button class="p-sub-tabs__btn" data-tab="fees">料金表</button>
+        <button class="p-sub-tabs__btn" data-tab="child">こどもスクール</button>
+        <button class="p-sub-tabs__btn" data-tab="adult">大人スクール</button>
+      </div>
+
+      <!-- Tab Panels Content Container -->
+      <div class="p-tab-contents-wrapper">
+        
+        <!-- ======================= PANEL 1: OVERVIEW ======================= -->
+        <div class="p-tab-content is-active" id="overview">
+          <div class="l-grid l-grid--2col" style="align-items: center; gap: 3.5rem;">
+            <div>
+              <h3 style="font-size: 1.75rem; font-weight: 900; margin-bottom: 1.5rem; color: var(--color-dark);">アットホームな長門店の快適設備</h3>
+              <p style="color: var(--color-slate-gray); margin-bottom: 2rem;">
+                太陽フィットネスクラブ長門店は、明るい陽の光が差し込む25m温水プールと、子どもたちがのびのびと通えるようなアットホームな空間設計が施されています。
+              </p>
+              
+              <!-- Spec Information List -->
+              <div style="background-color: var(--color-bg-white); border-radius: var(--radius-md); padding: 2rem; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 1rem;">
+                <div style="display: flex; border-bottom: 1px solid var(--color-border); padding-bottom: 0.75rem;">
+                  <span style="font-weight: 800; width: 120px; color: var(--color-dark);">営業時間</span>
+                  <span style="color: var(--color-slate-gray);">火〜土 10:00 - 20:30 / 日 10:00 - 17:30</span>
+                </div>
+                <div style="display: flex; border-bottom: 1px solid var(--color-border); padding-bottom: 0.75rem;">
+                  <span style="font-weight: 800; width: 120px; color: var(--color-dark);">休館日</span>
+                  <span style="color: var(--color-slate-gray);">毎週月曜日、その他指定休日</span>
+                </div>
+                <div style="display: flex; border-bottom: 1px solid var(--color-border); padding-bottom: 0.75rem;">
+                  <span style="font-weight: 800; width: 120px; color: var(--color-dark);">駐車場</span>
+                  <span style="color: var(--color-slate-gray);">敷地内無料駐車場完備 (45台)</span>
+                </div>
+                <div style="display: flex;">
+                  <span style="font-weight: 800; width: 120px; color: var(--color-dark);">主な設備</span>
+                  <span style="color: var(--color-slate-gray);">25m温水プール、クリーンシャワー、ドライ採暖室、保護者ギャラリー、フロントロビー</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Access Map Card -->
+            <div>
+              <div style="background-color: var(--color-bg-white); border-radius: var(--radius-md); padding: 1.5rem; border: 1px solid var(--color-border); box-shadow: var(--shadow-md);">
+                <div style="width: 100%; height: 320px; background-color: #E2E8F0; border-radius: var(--radius-sm); margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                  <i class="fa-solid fa-map-location-dot" style="font-size: 3rem; color: var(--color-slate-gray); opacity: 0.4;"></i>
+                  <span style="position: absolute; bottom: 1rem; left: 1rem; background-color: rgba(15, 23, 42, 0.7); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.8rem; font-weight: bold;">Google Map 長門店</span>
+                </div>
+                <h4 style="font-weight: 800; font-size: 1.1rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-location-dot" style="color: var(--color-nagato); margin-right: 0.25rem;"></i> アクセス経路</h4>
+                <p style="font-size: 0.9rem; color: var(--color-slate-gray);">山陰本線「長門市駅」から徒歩8分。駐車場も入りやすく、長門市内全域へのスクールバス運行でお子様の通学を強力にサポートしています。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================= PANEL 2: FEES ======================= -->
+        <div class="p-tab-content" id="fees">
+          <h3 style="font-size: 1.5rem; font-weight: 900; margin-bottom: 1.5rem; color: var(--color-dark); display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-solid fa-credit-card" style="color: var(--color-nagato);"></i> こどもスイミングスクール 月謝料金
+          </h3>
+          <div class="p-table-wrapper">
+            <table class="p-table">
+              <thead>
+                <tr>
+                  <th>コース名</th>
+                  <th>対象年齢</th>
+                  <th>週あたりの回数</th>
+                  <th>月会費 (税込)</th>
+                  <th>コース特徴</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="font-weight: 800; color: var(--color-dark);">幼児・学童合同クラス</td>
+                  <td>3才〜中学生</td>
+                  <td>週1回 / 週2回</td>
+                  <td style="font-family: var(--font-num); font-weight: 800; color: var(--color-dark);">¥6,600 / ¥8,250</td>
+                  <td>年齢と水泳レベルに応じた細やかなクラス分けで、水嫌いの克服から正しいクロールのキック・呼吸法を習得します。</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: 800; color: var(--color-dark);">選手育成クラス</td>
+                  <td>コーチ推薦の小中学生</td>
+                  <td>週3回以上 (月〜土)</td>
+                  <td style="font-family: var(--font-num); font-weight: 800; color: var(--color-dark);">¥9,900</td>
+                  <td>競泳大会への出場や自己ベスト更新を目指し、高度な泳法テクニックと強靭なメンタルを鍛えます。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 style="font-size: 1.5rem; font-weight: 900; margin-top: 3rem; margin-bottom: 1.5rem; color: var(--color-dark); display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-solid fa-credit-card" style="color: var(--color-nagato);"></i> 大人メンバー・スクール 月謝料金
+          </h3>
+          <div class="p-table-wrapper">
+            <table class="p-table">
+              <thead>
+                <tr>
+                  <th>会員クラス</th>
+                  <th>利用可能時間</th>
+                  <th>回数</th>
+                  <th>月会費 (税込)</th>
+                  <th>対象・特徴</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="font-weight: 800; color: var(--color-dark);">プールフリー一般会員</td>
+                  <td>火〜土 10:00-20:30 / 日 10:00-17:30</td>
+                  <td>制限なし</td>
+                  <td style="font-family: var(--font-num); font-weight: 800; color: var(--color-dark);">¥7,480</td>
+                  <td>温水プールを自由にご利用いただけます。ウォーキング用コースと泳ぐ用コースに分かれているため安心です。</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: 800; color: var(--color-dark);">大人の泳法・アクアスクール</td>
+                  <td>指定レッスンスケジュール枠</td>
+                  <td>週1回 / 週2回</td>
+                  <td style="font-family: var(--font-num); font-weight: 800; color: var(--color-dark);">¥8,030 / ¥10,230</td>
+                  <td>アクアビクス、四泳法レッスン、腰痛予防のための水中浮き身ストレッチ等に参加可能です。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ======================= PANEL 3: CHILD SCHOOL ======================= -->
+        <div class="p-tab-content" id="child">
+          <div style="margin-bottom: 3rem; background-color: var(--color-bg-white); border-radius: var(--radius-md); padding: 2.5rem; border: 1px solid var(--color-border);">
+            <h3 style="font-size: 1.5rem; font-weight: 900; margin-bottom: 1rem; color: var(--color-primary);">「できた！」の笑顔があふれる長門店のレッスン</h3>
+            <p style="color: var(--color-slate-gray); font-size: 1rem;">
+              長門店では、子どもたち全員が水泳を大好きになれるよう、コーチ陣が明るく声掛けを行いながら一人ひとりの成長スピードに合わせて個別カルテでレッスンします。「顔がつけられるようになった」「10m泳げた！」という一歩ずつの感動を保護者の皆様と共有します。
+            </p>
+          </div>
+
+          <h3 style="font-size: 1.35rem; font-weight: 900; margin-bottom: 1.25rem; color: var(--color-dark);">長門店 こどもスイミングスクール 時間割</h3>
+          <div class="p-table-wrapper">
+            <table class="p-table">
+              <thead>
+                <tr>
+                  <th>曜日</th>
+                  <th>15:40 - 16:40 (幼児・学童初級)</th>
+                  <th>16:50 - 17:50 (幼児・学童中級)</th>
+                  <th>18:00 - 19:00 (高学年・選手育成)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="font-weight: 800; color: var(--color-dark);">火曜日</td>
+                  <td>水慣れ・幼児初級レッスン</td>
+                  <td>学童クロール基礎練習</td>
+                  <td>4泳法スキルアップ・育成クラス</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: 800; color: var(--color-dark);">水曜日</td>
+                  <td>幼児初級レッスン</td>
+                  <td>学童中級クロールレッスン</td>
+                  <td>4泳法コンボ練習・育成クラス</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: 800; color: var(--color-dark);">木曜日</td>
+                  <td>水慣れ・幼児初級レッスン</td>
+                  <td>学童クロール基礎練習</td>
+                  <td>4泳法スキルアップ・育成クラス</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: 800; color: var(--color-dark);">金曜日</td>
+                  <td>幼児初級レッスン</td>
+                  <td>学童中級クロールレッスン</td>
+                  <td>4泳法コンボ練習・育成クラス</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: 800; color: var(--color-dark);">土曜日</td>
+                  <td style="background-color: rgba(226, 75, 139, 0.03); text-align: center; font-weight: bold; color: var(--color-primary);" colspan="3">
+                    【土曜特別クラス】 13:30 - 14:30 (全年齢合同フリーレッスン) / 14:40 - 15:40 (選手選抜クラス)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ======================= PANEL 4: ADULT SCHOOL ======================= -->
+        <div class="p-tab-content" id="adult">
+          <div style="margin-bottom: 3rem; background-color: var(--color-bg-white); border-radius: var(--radius-md); padding: 2.5rem; border: 1px solid var(--color-border);">
+            <h3 style="font-size: 1.5rem; font-weight: 900; margin-bottom: 1rem; color: var(--color-primary);">健康促進からダイエットまで！アクティブフィットネス</h3>
+            <p style="color: var(--color-slate-gray); font-size: 1rem;">
+              長門店では、水泳指導だけでなく、プール内で行う音楽に合わせたアクアビクスや、足腰を鍛えて転倒予防に効果的な「水中ノルディックウォーキング」など、アクティブシニアにも最適な健康づくりメニューが大変活発に行われています。
+            </p>
+          </div>
+
+          <h3 style="font-size: 1.35rem; font-weight: 900; margin-bottom: 1.25rem; color: var(--color-dark);">長門店 大人レッスンプログラム時間表</h3>
+          <div class="p-table-wrapper">
+            <table class="p-table">
+              <thead>
+                <tr>
+                  <th>時間帯</th>
+                  <th>火曜日</th>
+                  <th>水曜日</th>
+                  <th>木曜日</th>
+                  <th>金曜日</th>
+                  <th>土曜日</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="font-weight: 800; color: var(--color-dark);">10:30 - 11:15 (午前)</td>
+                  <td>腰痛膝痛予防・水中歩行</td>
+                  <td>大人の初めて平泳ぎ</td>
+                  <td>リズミカルアクアビクス</td>
+                  <td>水中健康リズム体操</td>
+                  <td>週末アクティブアクア</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: 800; color: var(--color-dark);">13:30 - 14:15 (昼下がり)</td>
+                  <td>プール自由遊泳</td>
+                  <td>プール自由遊泳</td>
+                  <td>プール自由遊泳</td>
+                  <td>プール自由遊泳</td>
+                  <td>プール自由遊泳</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: 800; color: var(--color-dark);">19:15 - 20:00 (夜間)</td>
+                  <td>プール自由遊泳のみ</td>
+                  <td>大人の四泳法スキルアップ</td>
+                  <td>プール自由遊泳のみ</td>
+                  <td>大人の四泳法スキルアップ</td>
+                  <td>フリー遊泳のみ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     BRANCH CAMPAIGN & CTA
+     ========================================================================== -->
+  <section style="padding: 6rem 0; background-color: var(--color-bg-white);">
+    <div class="l-container">
+      <div style="background: var(--brand-grad); border-radius: var(--radius-lg); padding: 4rem; color: var(--color-bg-white); text-align: center; box-shadow: var(--brand-shadow); position: relative; overflow: hidden;">
+        <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background-color: rgba(255, 255, 255, 0.1); border-radius: 50%;"></div>
+        
+        <span style="font-family: var(--font-head); font-weight: 800; font-size: 0.95rem; color: var(--color-iwami); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem; display: block;">Trial Campaign</span>
+        <h2 style="font-size: 2.25rem; font-weight: 900; margin-bottom: 1.5rem; color: var(--color-bg-white);">長門店 1日無料体験レッスン受付中！</h2>
+        <p style="opacity: 0.9; max-width: 700px; margin: 0 auto 2.5rem auto; font-size: 1.05rem;">
+          実際のプールやジムの設備、レッスンの雰囲気を体感してみませんか？<br>
+          ただいま「1日体験レッスン無料」＆「体験当日入会で登録料・初回月謝半額」キャンペーンを開催中！
+        </p>
+        
+        <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+          <a href="tel:0837-22-1600" class="c-btn c-btn--outline" style="background-color: var(--color-bg-white); color: var(--color-nagato) !important; border-color: var(--color-bg-white); font-weight: 900;">
+            <i class="fa-solid fa-phone" style="margin-right: 0.5rem;"></i> お電話で予約: 0837-22-1600
+          </a>
+          <a href="./campaign.html" class="c-btn c-btn--outline">
+            体験WEB予約フォームへ <i class="fa-solid fa-envelope" style="margin-left: 0.5rem;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     FOOTER SECTION (Modern Glass Columns)
+     ========================================================================== -->
+  <footer class="l-footer">
+    <div class="l-container">
+      <div class="l-footer__top">
+        <div class="l-footer__about">
+          <div class="l-footer__logo">
+            <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.85rem; letter-spacing: -0.02em; color: var(--color-bg-white); display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+              <i class="fa-solid fa-sun" style="color: var(--color-iwami);"></i>
+              TAIYO
+            </span>
+          </div>
+          <p class="l-footer__desc">
+            株式会社太陽コミュニケーションズは、スイミングスクールおよび総合フィットネスクラブの運営を通じて、山口・島根エリアの健康づくりと心豊かなライフスタイルの創出に貢献します。
+          </p>
+        </div>
+
+        <div class="l-footer__grid">
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-hagi">萩店</h4>
+            <address class="l-footer__address">
+              〒758-0063<br>
+              山口県萩市大字山田字東沖田4286番地
+            </address>
+            <a href="tel:0838-25-5656" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0838-25-5656</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-hagi.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-nagato">長門店</h4>
+            <address class="l-footer__address">
+              〒759-4101<br>
+              山口県長門市東深川1394-1
+            </address>
+            <a href="tel:0837-22-1600" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0837-22-1600</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-nagato.html" class="l-footer__link" style="color: var(--color-nagato);">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-hofu">防府店</h4>
+            <address class="l-footer__address">
+              〒747-0849<br>
+              山口県防府市西仁井令1丁目12-7
+            </address>
+            <a href="tel:0835-28-7588" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0835-28-7588</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-hofu.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-iwami">石見店</h4>
+            <address class="l-footer__address">
+              〒698-0024<br>
+              島根県益田市駅前町37-13
+            </address>
+            <a href="tel:0856-23-5581" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0856-23-5581</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-iwami.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-footer__bottom">
+        <small class="l-footer__copyright">&copy; 株式会社太陽コミュニケーションズ 太陽フィットネスクラブ. All Rights Reserved.</small>
+        
+        <div class="l-footer__sns">
+          <a href="#" class="l-footer__sns-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="color: var(--color-bg-white);"></i></a>
+          <a href="#" class="l-footer__sns-link" aria-label="Instagram"><i class="fa-brands fa-instagram" style="color: var(--color-bg-white);"></i></a>
+          <a href="#" class="l-footer__sns-link" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color: var(--color-bg-white);"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

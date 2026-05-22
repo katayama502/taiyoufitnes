@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>大人スクール＆フィットネス | 太陽フィットネスクラブ | 山口県・島根県の総合スポーツジム</title>
+  <meta name="description" content="【太陽フィットネスクラブ 大人スクール＆フィットネス】のご案内。プール自由遊泳、アクアプログラム、ホットヨガ、ピラティス、最新ジムマシンのご紹介。健康増進や理想のボディメイクを応援。">
+  <meta name="keywords" content="太陽フィットネスクラブ,大人フィットネス,ジムマシン,ヨガ教室,アクアビクス,大人スイミング,山口県,島根県">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    .p-page-hero {
+      position: relative;
+      height: 360px;
+      background: linear-gradient(135deg, rgba(13, 109, 192, 0.9) 0%, rgba(15, 23, 42, 0.8) 100%), 
+                  url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      color: var(--color-bg-white);
+      z-index: 1;
+    }
+    
+    .p-page-hero__wave {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      line-height: 0;
+      z-index: 3;
+    }
+    
+    .p-page-hero__wave svg {
+      width: 100%;
+      height: 40px;
+      fill: var(--color-bg-base);
+    }
+
+    .p-pillar-card {
+      background-color: var(--color-bg-white);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition-normal);
+    }
+
+    .p-pillar-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+     HEADER SECTION (Sticky Glassmorphic Nav)
+     ========================================================================== -->
+  <header class="l-header" id="header">
+    <div class="l-container l-header__container">
+      <div class="l-header__logo">
+        <a href="./index.html">
+          <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.65rem; letter-spacing: -0.02em; color: var(--color-dark); display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-solid fa-sun" style="color: var(--color-iwami); filter: drop-shadow(0 2px 8px rgba(255, 126, 65, 0.4));"></i>
+            TAIYO<span style="color: var(--color-primary); font-weight: 500; font-size: 0.95rem; letter-spacing: 0.1em; border-left: 2px solid var(--color-border); padding-left: 0.5rem; margin-left: 0.25rem;">FITNESS CLUB</span>
+          </span>
+        </a>
+      </div>
+      
+      <nav class="l-header__nav" aria-label="メインナビゲーション">
+        <ul class="p-global-nav">
+          <li class="p-global-nav__item">
+            <a href="./index.html" class="p-global-nav__link">ホーム</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./greeting.html" class="p-global-nav__link">代表挨拶</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link">店舗一覧 <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./shop-hagi.html">萩店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-nagato.html">長門店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-hofu.html">防府店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-iwami.html">石見店</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link" style="color: var(--color-primary);">プログラム <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./program-child.html">こどもスクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./program-adult.html" style="color: var(--color-primary);">大人スクール</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./campaign.html" class="p-global-nav__link">キャンペーン</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./blog.html" class="p-global-nav__link">スタッフブログ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="./recruit.html" class="l-header__cta">
+        採用情報 <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem; font-size: 0.8rem;"></i>
+      </a>
+
+      <!-- Mobile Hamburger button -->
+      <div class="l-header__hamburger" id="hamburger" aria-expanded="false" aria-label="メニューを開閉する">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <nav class="p-mobile-nav" id="mobile-nav" aria-label="モバイルナビゲーション">
+    <ul class="p-mobile-nav__list">
+      <li><a href="./index.html" class="p-mobile-nav__link">ホーム</a></li>
+      <li><a href="./greeting.html" class="p-mobile-nav__link">代表挨拶</a></li>
+      <li>
+        <span class="p-mobile-nav__link" style="opacity: 0.5; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-top: 1rem;">店舗一覧</span>
+        <ul class="p-mobile-nav__sublist">
+          <li><a href="./shop-hagi.html" class="p-mobile-nav__sublink">萩店</a></li>
+          <li><a href="./shop-nagato.html" class="p-mobile-nav__sublink">長門店</a></li>
+          <li><a href="./shop-hofu.html" class="p-mobile-nav__sublink">防府店</a></li>
+          <li><a href="./shop-iwami.html" class="p-mobile-nav__sublink">石見店</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="p-mobile-nav__link" style="opacity: 0.5; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-top: 1rem;">プログラム</span>
+        <ul class="p-mobile-nav__sublist">
+          <li><a href="./program-child.html" class="p-mobile-nav__sublink">こどもスクール</a></li>
+          <li><a href="./program-adult.html" class="p-mobile-nav__sublink" style="color: var(--color-primary);">大人スクール</a></li>
+        </ul>
+      </li>
+      <li><a href="./campaign.html" class="p-mobile-nav__link">キャンペーン</a></li>
+      <li><a href="./blog.html" class="p-mobile-nav__link">ブログ</a></li>
+      <li><a href="./recruit.html" class="p-mobile-nav__link" style="color: var(--color-nagato);">採用情報</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==========================================================================
+     PAGE HERO (Greeting Header)
+     ========================================================================== -->
+  <section class="p-page-hero">
+    <div class="l-container">
+      <div style="max-width: 600px;">
+        <span style="font-family: var(--font-head); font-weight: 800; letter-spacing: 0.15em; color: var(--color-iwami); display: block; margin-bottom: 0.5rem; text-transform: uppercase;">Adult Fitness &amp; School</span>
+        <h1 style="font-size: 3rem; font-weight: 900; line-height: 1.2; margin-bottom: 1rem; color: var(--color-bg-white);">大人スクール＆フィットネス</h1>
+        <p style="opacity: 0.9; font-size: 1.05rem;">プール自由遊泳・マシンジム・本格スタジオヨガで、なりたい自分へ。</p>
+      </div>
+    </div>
+    <div class="p-page-hero__wave">
+      <svg viewBox="0 0 1440 40" preserveAspectRatio="none">
+        <path d="M0,15L120,18.3C240,22,480,28,720,28.3C960,28,1200,22,1320,18.3L1440,15L1440,40L1320,40C1200,40,960,40,720,40C480,40,240,40,120,40L0,40Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     INTRO SECTION (Synergy Benefits)
+     ========================================================================== -->
+  <section style="padding: 5rem 0;">
+    <div class="l-container">
+      
+      <div class="l-grid l-grid--2col u-fade-up" style="gap: 3.5rem; align-items: center; margin-bottom: 5rem;">
+        <div>
+          <span style="font-family: var(--font-head); font-weight: 800; color: var(--color-primary); font-size: 0.95rem; letter-spacing: 0.1em; display: block; margin-bottom: 0.5rem;">Triple Synergy</span>
+          <h2 style="font-size: 2.25rem; font-weight: 900; color: var(--color-dark); margin-bottom: 1.5rem;">ジム × プール × スタジオの<br><span style="color: var(--color-primary);">相乗効果（トリプルシナジー）</span></h2>
+          <p style="color: var(--color-slate-gray); margin-bottom: 1.5rem;">
+            健康維持や理想のボディメイクのためには、偏ったトレーニングではなく、有酸素運動・無酸素運動・ストレッチをバランスよく組み合わせることがもっとも効果的です。
+          </p>
+          <p style="color: var(--color-slate-gray);">
+            太陽フィットネスクラブでは、広々とした「マシンジム」、浮力を活用して関節に優しく有酸素運動ができる「温水プール」、身体を伸ばし自律神経を整える「スタジオプログラム（ヨガなど）」の３つの設備を、自身のライフスタイルや体力目標に合わせて自由自在に組み合わせることができます。
+          </p>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80" alt="ヨガを教えるインストラクター" style="width: 100%; height: 350px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+        </div>
+      </div>
+
+      <!-- Pillars Grids -->
+      <div class="c-section-title u-fade-up">
+        <span class="c-section-title__sub">Our Pillars</span>
+        <h2 class="c-section-title__main">3つのエリアとプログラム</h2>
+      </div>
+
+      <div class="l-grid l-grid--3col u-fade-up" style="gap: 2.5rem; margin-bottom: 6rem;">
+        <!-- Area 1 -->
+        <article class="p-pillar-card">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80" alt="プールエリア" style="height: 200px; width: 100%; object-fit: cover;">
+          <div style="padding: 2rem;">
+            <h3 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 1rem; color: var(--color-primary);"><i class="fa-solid fa-water" style="margin-right: 0.5rem;"></i> 温水プールエリア</h3>
+            <p style="font-size: 0.9rem; color: var(--color-slate-gray); margin-bottom: 1rem;">
+              水温・水質が常に快適に保たれた25m温水プール。自由遊泳のほか、水の浮力・抵抗を活用して無理なく脂肪燃焼する「アクアビクス」や、ベテランコーチによる大人向けの「4泳法水泳教室」なども随時開催中。
+            </p>
+          </div>
+        </article>
+
+        <!-- Area 2 -->
+        <article class="p-pillar-card">
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=400&q=80" alt="ジムエリア" style="height: 200px; width: 100%; object-fit: cover;">
+          <div style="padding: 2rem;">
+            <h3 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 1rem; color: var(--color-nagato);"><i class="fa-solid fa-dumbbell" style="margin-right: 0.5rem;"></i> マシンジムエリア</h3>
+            <p style="font-size: 0.9rem; color: var(--color-slate-gray); margin-bottom: 1rem;">
+              最新の有酸素ランニングマシンから、部分強化に最適なウェイトトレーニングマシンまで充実したラインナップ。専任のインストラクターがマシンの正しい使い方、姿勢などを手厚くサポートします。
+            </p>
+          </div>
+        </article>
+
+        <!-- Area 3 -->
+        <article class="p-pillar-card">
+          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=400&q=80" alt="スタジオエリア" style="height: 200px; width: 100%; object-fit: cover;">
+          <div style="padding: 2rem;">
+            <h3 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 1rem; color: var(--color-hofu);"><i class="fa-solid fa-spa" style="margin-right: 0.5rem;"></i> 専用フィットネススタジオ</h3>
+            <p style="font-size: 0.9rem; color: var(--color-slate-gray); margin-bottom: 1rem;">
+              人気のデトックスヨガ、ピラティス、リズムに合わせて楽しく有酸素運動をするエアロビクス教室など、多種多様なスタジオプログラムを開催。プロのインストラクターによる対面レッスンで、楽しく健康習慣を維持できます。
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Health Care Features -->
+      <div style="background-color: var(--color-bg-white); border-radius: var(--radius-md); padding: 4rem; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); margin-bottom: 5rem;" class="u-fade-up">
+        <div style="max-width: 700px; margin: 0 auto 3rem auto; text-align: center;">
+          <span style="font-family: var(--font-head); font-weight: 800; color: var(--color-primary); font-size: 0.95rem; letter-spacing: 0.15em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">Joint-friendly Sports</span>
+          <h2 style="font-size: 2.25rem; font-weight: 900; color: var(--color-dark); margin-bottom: 1rem;">腰痛・ヒザ痛・ロコモ予防に最適なアクアフィットネス</h2>
+          <p style="color: var(--color-slate-gray);">
+            陸上での運動は重力による腰やヒザ関節への負担が避けられません。しかし、水中運動（ウォーキングやアクアビクス）であれば、浮力によって体重負荷が約10分の1に軽減されるため、関節に痛みをお持ちの方やシニアの方、リハビリ目的の方でも安全かつ効果的に筋肉を鍛えることができます。
+          </p>
+        </div>
+
+        <div class="l-grid l-grid--3col" style="gap: 2.5rem; text-align: center;">
+          <div>
+            <i class="fa-solid fa-heart-pulse" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+            <h4 style="font-weight: 800; font-size: 1.15rem; margin-bottom: 0.75rem;">心肺機能の向上</h4>
+            <p style="font-size: 0.85rem; color: var(--color-slate-gray);">水圧が静脈還流を助け、効率よく心肺に刺激を与えることで持久力や基礎体力が自然とアップします。</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-person-running" style="font-size: 2.5rem; color: var(--color-nagato); margin-bottom: 1rem;"></i>
+            <h4 style="font-weight: 800; font-size: 1.15rem; margin-bottom: 0.75rem;">高い消費カロリー</h4>
+            <p style="font-size: 0.85rem; color: var(--color-slate-gray);">水の密度は空気の約800倍。ゆっくり動くだけでも全身に適度な負荷がかかり、効率的に脂肪を燃焼します。</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-wind" style="font-size: 2.5rem; color: var(--color-hofu); margin-bottom: 1rem;"></i>
+            <h4 style="font-weight: 800; font-size: 1.15rem; margin-bottom: 0.75rem;">リラックス効果</h4>
+            <p style="font-size: 0.85rem; color: var(--color-slate-gray);">プールの浮遊感は脳の緊張をほぐし、自律神経のバランスを整え、日頃のストレスや不眠の改善を促します。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     FOOTER SECTION (Modern Glass Columns)
+     ========================================================================== -->
+  <footer class="l-footer">
+    <div class="l-container">
+      <div class="l-footer__top">
+        <div class="l-footer__about">
+          <div class="l-footer__logo">
+            <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.85rem; letter-spacing: -0.02em; color: var(--color-bg-white); display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+              <i class="fa-solid fa-sun" style="color: var(--color-iwami);"></i>
+              TAIYO
+            </span>
+          </div>
+          <p class="l-footer__desc">
+            株式会社太陽コミュニケーションズは、スイミングスクールおよび総合フィットネスクラブの運営を通じて、山口・島根エリアの健康づくりと心豊かなライフスタイルの創出に貢献します。
+          </p>
+        </div>
+
+        <div class="l-footer__grid">
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-hagi">萩店</h4>
+            <address class="l-footer__address">
+              〒758-0063<br>
+              山口県萩市大字山田字東沖田4286番地
+            </address>
+            <a href="tel:0838-25-5656" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0838-25-5656</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-hagi.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-nagato">長門店</h4>
+            <address class="l-footer__address">
+              〒759-4101<br>
+              山口県長門市東深川1394-1
+            </address>
+            <a href="tel:0837-22-1600" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0837-22-1600</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-nagato.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-hofu">防府店</h4>
+            <address class="l-footer__address">
+              〒747-0849<br>
+              山口県防府市西仁井令1丁目12-7
+            </address>
+            <a href="tel:0835-28-7588" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0835-28-7588</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-hofu.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-iwami">石見店</h4>
+            <address class="l-footer__address">
+              〒698-0024<br>
+              島根県益田市駅前町37-13
+            </address>
+            <a href="tel:0856-23-5581" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0856-23-5581</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-iwami.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-footer__bottom">
+        <small class="l-footer__copyright">&copy; 株式会社太陽コミュニケーションズ 太陽フィットネスクラブ. All Rights Reserved.</small>
+        
+        <div class="l-footer__sns">
+          <a href="#" class="l-footer__sns-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="color: var(--color-bg-white);"></i></a>
+          <a href="#" class="l-footer__sns-link" aria-label="Instagram"><i class="fa-brands fa-instagram" style="color: var(--color-bg-white);"></i></a>
+          <a href="#" class="l-footer__sns-link" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color: var(--color-bg-white);"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

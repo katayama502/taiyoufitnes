@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>採用情報・リクルート | 太陽フィットネスクラブ | 太陽コミュニケーションズ</title>
+  <meta name="description" content="【太陽コミュニケーションズ 採用情報】のご紹介。スイミングインストラクター、フロントフロント受付、送迎バスドライバーの求人募集。未経験歓迎、充実の研修制度と笑顔のチーム。">
+  <meta name="keywords" content="スイミングインストラクター求人,スポーツジム採用,太陽コミュニケーションズ,山口県求人,島根県求人,未経験歓迎スポーツインストラクター">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    .p-page-hero {
+      position: relative;
+      height: 360px;
+      background: linear-gradient(135deg, rgba(226, 75, 139, 0.9) 0%, rgba(15, 23, 42, 0.8) 100%), 
+                  url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      color: var(--color-bg-white);
+      z-index: 1;
+    }
+    
+    .p-page-hero__wave {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      line-height: 0;
+      z-index: 3;
+    }
+    
+    .p-page-hero__wave svg {
+      width: 100%;
+      height: 40px;
+      fill: var(--color-bg-base);
+    }
+
+    .p-job-card {
+      background-color: var(--color-bg-white);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition-normal);
+    }
+
+    .p-job-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .p-form-group {
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .p-form-label {
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: var(--color-dark);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .p-form-input {
+      width: 100%;
+      background-color: var(--color-bg-base);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem;
+      font-size: 0.95rem;
+      color: var(--color-dark);
+      transition: var(--transition-fast);
+    }
+
+    .p-form-input:focus {
+      border-color: var(--color-nagato);
+      box-shadow: var(--shadow-glow-nagato);
+      background-color: var(--color-bg-white);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+     HEADER SECTION (Sticky Glassmorphic Nav)
+     ========================================================================== -->
+  <header class="l-header" id="header">
+    <div class="l-container l-header__container">
+      <div class="l-header__logo">
+        <a href="./index.html">
+          <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.65rem; letter-spacing: -0.02em; color: var(--color-dark); display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-solid fa-sun" style="color: var(--color-iwami); filter: drop-shadow(0 2px 8px rgba(255, 126, 65, 0.4));"></i>
+            TAIYO<span style="color: var(--color-primary); font-weight: 500; font-size: 0.95rem; letter-spacing: 0.1em; border-left: 2px solid var(--color-border); padding-left: 0.5rem; margin-left: 0.25rem;">FITNESS CLUB</span>
+          </span>
+        </a>
+      </div>
+      
+      <nav class="l-header__nav" aria-label="メインナビゲーション">
+        <ul class="p-global-nav">
+          <li class="p-global-nav__item">
+            <a href="./index.html" class="p-global-nav__link">ホーム</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./greeting.html" class="p-global-nav__link">代表挨拶</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link">店舗一覧 <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./shop-hagi.html">萩店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-nagato.html">長門店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-hofu.html">防府店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-iwami.html">石見店</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link">プログラム <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./program-child.html">こどもスクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./program-adult.html">大人スクール</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./campaign.html" class="p-global-nav__link">キャンペーン</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./blog.html" class="p-global-nav__link">スタッフブログ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="./recruit.html" class="l-header__cta" style="background: var(--grad-nagato); box-shadow: var(--shadow-glow-nagato);">
+        採用情報 <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem; font-size: 0.8rem;"></i>
+      </a>
+
+      <!-- Mobile Hamburger button -->
+      <div class="l-header__hamburger" id="hamburger" aria-expanded="false" aria-label="メニューを開閉する">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <nav class="p-mobile-nav" id="mobile-nav" aria-label="モバイルナビゲーション">
+    <ul class="p-mobile-nav__list">
+      <li><a href="./index.html" class="p-mobile-nav__link">ホーム</a></li>
+      <li><a href="./greeting.html" class="p-mobile-nav__link">代表挨拶</a></li>
+      <li>
+        <span class="p-mobile-nav__link" style="opacity: 0.5; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-top: 1rem;">店舗一覧</span>
+        <ul class="p-mobile-nav__sublist">
+          <li><a href="./shop-hagi.html" class="p-mobile-nav__sublink">萩店</a></li>
+          <li><a href="./shop-nagato.html" class="p-mobile-nav__sublink">長門店</a></li>
+          <li><a href="./shop-hofu.html" class="p-mobile-nav__sublink">防府店</a></li>
+          <li><a href="./shop-iwami.html" class="p-mobile-nav__sublink">石見店</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="p-mobile-nav__link" style="opacity: 0.5; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-top: 1rem;">プログラム</span>
+        <ul class="p-mobile-nav__sublist">
+          <li><a href="./program-child.html" class="p-mobile-nav__sublink">こどもスクール</a></li>
+          <li><a href="./program-adult.html" class="p-mobile-nav__sublink">大人スクール</a></li>
+        </ul>
+      </li>
+      <li><a href="./campaign.html" class="p-mobile-nav__link">キャンペーン</a></li>
+      <li><a href="./blog.html" class="p-mobile-nav__link">ブログ</a></li>
+      <li><a href="./recruit.html" class="p-mobile-nav__link" style="color: var(--color-nagato);">採用情報</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==========================================================================
+     PAGE HERO (Recruit Header)
+     ========================================================================== -->
+  <section class="p-page-hero">
+    <div class="l-container">
+      <div style="max-width: 600px;">
+        <span style="font-family: var(--font-head); font-weight: 800; letter-spacing: 0.15em; color: var(--color-iwami); display: block; margin-bottom: 0.5rem; text-transform: uppercase;">Careers &amp; Recruiting</span>
+        <h1 style="font-size: 3rem; font-weight: 900; line-height: 1.2; margin-bottom: 1rem; color: var(--color-bg-white);">採用特設サイト</h1>
+        <p style="opacity: 0.9; font-size: 1.05rem;">心と体の健康を支える「笑顔のチーム」に加わりませんか？</p>
+      </div>
+    </div>
+    <div class="p-page-hero__wave">
+      <svg viewBox="0 0 1440 40" preserveAspectRatio="none">
+        <path d="M0,15L120,18.3C240,22,480,28,720,28.3C960,28,1200,22,1320,18.3L1440,15L1440,40L1320,40C1200,40,960,40,720,40C480,40,240,40,120,40L0,40Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     RECRUIT CONTENT
+     ========================================================================== -->
+  <section style="padding: 5rem 0;">
+    <div class="l-container">
+      
+      <!-- Philosophy & Team environment -->
+      <div class="l-grid l-grid--2col u-fade-up" style="gap: 3.5rem; align-items: center; margin-bottom: 5rem;">
+        <div>
+          <span style="font-family: var(--font-head); font-weight: 800; color: var(--color-nagato); font-size: 0.95rem; letter-spacing: 0.1em; display: block; margin-bottom: 0.5rem;">Join Our Team</span>
+          <h2 style="font-size: 2.25rem; font-weight: 900; color: var(--color-dark); margin-bottom: 1.5rem;">未経験からプロへ。<br>笑顔があふれる温かい職場です</h2>
+          <p style="color: var(--color-slate-gray); margin-bottom: 1.5rem;">
+            「水泳指導の経験がない」「スポーツ業界は初めて」という方もご安心ください。太陽フィットネスクラブでは、新メンバー向けの基礎研修制度が確立されています。プールの安全管理、指導の進め方、お客様への接客など、先輩が一つずつ優しくレクチャーします。
+          </p>
+          <p style="color: var(--color-slate-gray);">
+            私たちが何よりも大切にしているのは、「人の役に立ちたいという想い」と「元気な笑顔」です。多世代の会員様がイキイキと通う当クラブで、あなた自身の個性や笑顔を最大限に活かし、地域の方々に「うれしい進化」を届けるやりがいを感じてみませんか？
+          </p>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" alt="笑顔で会話するスタッフたち" style="width: 100%; height: 350px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+        </div>
+      </div>
+
+      <!-- Job Openings -->
+      <div class="c-section-title u-fade-up">
+        <span class="c-section-title__sub">Job Openings</span>
+        <h2 class="c-section-title__main">募集職種一覧</h2>
+      </div>
+
+      <div class="l-grid l-grid--3col u-fade-up" style="gap: 2.5rem; margin-bottom: 6rem;">
+        <!-- Job 1 -->
+        <article class="p-job-card">
+          <div style="background: var(--grad-splashtop); padding: 1.5rem; color: white; display: flex; align-items: center; gap: 0.75rem;">
+            <i class="fa-solid fa-water" style="font-size: 1.5rem;"></i>
+            <h3 style="font-weight: 900; font-size: 1.15rem; color: white;">スイミング・スポーツ指導員</h3>
+          </div>
+          <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <p style="font-size: 0.9rem; color: var(--color-slate-gray); margin-bottom: 1.5rem; flex-grow: 1;">
+              子ども水泳教室での水慣れ・泳法指導、大人向けのアクアビクスレッスン、マシンジムでの運動指導や安全監視等を行います。
+            </p>
+            <div style="border-top: 1px solid var(--color-border); padding-top: 1rem;">
+              <span style="font-size: 0.8rem; font-weight: 800; color: var(--color-dark); display: block; margin-bottom: 0.25rem;">【雇用形態・給与】</span>
+              <span style="font-size: 0.85rem; color: var(--color-slate-gray); display: block;">正社員：月給 180,000円〜260,000円</span>
+              <span style="font-size: 0.85rem; color: var(--color-slate-gray); display: block;">アルバイト：時給 1,000円〜1,300円</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Job 2 -->
+        <article class="p-job-card">
+          <div style="background: var(--grad-nagato); padding: 1.5rem; color: white; display: flex; align-items: center; gap: 0.75rem;">
+            <i class="fa-solid fa-clipboard-user" style="font-size: 1.5rem;"></i>
+            <h3 style="font-weight: 900; font-size: 1.15rem; color: white;">フロント受付・事務スタッフ</h3>
+          </div>
+          <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <p style="font-size: 0.9rem; color: var(--color-slate-gray); margin-bottom: 1.5rem; flex-grow: 1;">
+              クラブの「顔」として、来客対応、入退会手続き、電話対応、スクールバス予約受付、簡単なPC入力事務などを行います。
+            </p>
+            <div style="border-top: 1px solid var(--color-border); padding-top: 1rem;">
+              <span style="font-size: 0.8rem; font-weight: 800; color: var(--color-dark); display: block; margin-bottom: 0.25rem;">【雇用形態・給与】</span>
+              <span style="font-size: 0.85rem; color: var(--color-slate-gray); display: block;">正社員：月給 170,000円〜220,000円</span>
+              <span style="font-size: 0.85rem; color: var(--color-slate-gray); display: block;">アルバイト：時給 980円〜1,100円</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Job 3 -->
+        <article class="p-job-card">
+          <div style="background: var(--grad-iwami); padding: 1.5rem; color: white; display: flex; align-items: center; gap: 0.75rem;">
+            <i class="fa-solid fa-bus" style="font-size: 1.5rem;"></i>
+            <h3 style="font-weight: 900; font-size: 1.15rem; color: white;">スクールバス運転手</h3>
+          </div>
+          <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <p style="font-size: 0.9rem; color: var(--color-slate-gray); margin-bottom: 1.5rem; flex-grow: 1;">
+              こどもスイミングスクールに通うお子さまたちを、指定された運行ルートに沿って安全に送迎します。車両点検や洗車も含みます。
+            </p>
+            <div style="border-top: 1px solid var(--color-border); padding-top: 1rem;">
+              <span style="font-size: 0.8rem; font-weight: 800; color: var(--color-dark); display: block; margin-bottom: 0.25rem;">【雇用形態・給与】</span>
+              <span style="font-size: 0.85rem; color: var(--color-slate-gray); display: block;">契約社員：月給 160,000円〜200,000円</span>
+              <span style="font-size: 0.85rem; color: var(--color-slate-gray); display: block;">パート：時給 1,050円〜1,200円</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Working Conditions Detail Table -->
+      <div style="background-color: var(--color-bg-white); border-radius: var(--radius-md); padding: 4rem; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); margin-bottom: 5rem;" class="u-fade-up">
+        <h3 style="font-size: 1.5rem; font-weight: 900; margin-bottom: 2rem; text-align: center;"><i class="fa-solid fa-rectangle-list" style="color: var(--color-nagato); margin-right: 0.5rem;"></i> 福利厚生・就業要項</h3>
+        
+        <div class="p-table-wrapper">
+          <table class="p-table">
+            <tbody>
+              <tr>
+                <th style="width: 150px; background-color: var(--color-bg-base); font-weight: 800;">勤務地</th>
+                <td>ご希望の各店舗 (萩店 / 長門店 / 防府店 / 石見店)　※ご希望やお住まいを考慮し決定します。</td>
+              </tr>
+              <tr>
+                <th style="background-color: var(--color-bg-base); font-weight: 800;">諸手当</th>
+                <td>通勤手当（実費支給・上限あり）、役職手当、指導資格手当、時間外勤務手当</td>
+              </tr>
+              <tr>
+                <th style="background-color: var(--color-bg-base); font-weight: 800;">福利厚生</th>
+                <td>社会保険完備（健康保険、厚生年金、雇用保険、労災保険）、施設利用無料制度（プール・ジムが無料で使えます！）、制服貸与、有給休暇、産休育休制度完備</td>
+              </tr>
+              <tr>
+                <th style="background-color: var(--color-bg-base); font-weight: 800;">昇給・賞与</th>
+                <td>昇給：年1回 / 賞与：年2回（業績による）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Job Entry Form -->
+      <div style="background-color: var(--color-bg-white); border-radius: var(--radius-md); padding: 4rem; border: 1px solid var(--color-border); box-shadow: var(--shadow-lg); max-width: 700px; margin: 0 auto; text-align: center;" class="u-fade-up">
+        <span style="font-family: var(--font-head); font-weight: 800; color: var(--color-nagato); font-size: 0.95rem; letter-spacing: 0.15em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">Job Application</span>
+        <h3 style="font-size: 1.85rem; font-weight: 900; margin-bottom: 1rem; color: var(--color-dark);">採用エントリー・お問い合わせフォーム</h3>
+        <p style="color: var(--color-slate-gray); margin-bottom: 2.5rem; font-size: 0.95rem;">
+          当社の採用活動に興味をお持ちいただきありがとうございます。<br>
+          以下のフォームに必要事項を入力して送信してください。追って採用担当より面接等のご連絡をいたします。
+        </p>
+
+        <form action="#" method="post" onsubmit="event.preventDefault(); alert('エントリーありがとうございます。担当者より面接等のご連絡を差し上げます。');">
+          <div class="p-form-group">
+            <label class="p-form-label" for="applicant-name">氏名</label>
+            <input class="p-form-input" id="applicant-name" type="text" placeholder="例：太陽 花子" required>
+          </div>
+          <div class="p-form-group">
+            <label class="p-form-label" for="applicant-birth">生年月日</label>
+            <input class="p-form-input" id="applicant-birth" type="text" placeholder="例：2000年4月1日" required>
+          </div>
+          <div class="p-form-group">
+            <label class="p-form-label" for="applicant-email">メールアドレス</label>
+            <input class="p-form-input" id="applicant-email" type="email" placeholder="example@domain.com" required>
+          </div>
+          <div class="p-form-group">
+            <label class="p-form-label" for="applicant-tel">電話番号</label>
+            <input class="p-form-input" id="applicant-tel" type="tel" placeholder="000-0000-0000" required>
+          </div>
+          <div class="p-form-group">
+            <label class="p-form-label" for="applicant-job">希望職種</label>
+            <select class="p-form-input" id="applicant-job" required>
+              <option value="">希望職種を選択してください</option>
+              <option value="instructor">スイミング・スポーツ指導員</option>
+              <option value="front">フロント受付・事務スタッフ</option>
+              <option value="driver">スクールバス運転手</option>
+            </select>
+          </div>
+          <div class="p-form-group">
+            <label class="p-form-label" for="applicant-msg">自己PR・お問い合わせ内容</label>
+            <textarea class="p-form-input" id="applicant-msg" rows="5" placeholder="志望動機や自己PR、質問などお気軽にご記入ください。" style="resize: vertical;" required></textarea>
+          </div>
+          <button class="c-btn c-btn--primary" type="submit" style="width: 100%; border: none; margin-top: 1rem; background: var(--grad-nagato); box-shadow: var(--shadow-glow-nagato);">
+            エントリーする <i class="fa-solid fa-paper-plane" style="margin-left: 0.5rem;"></i>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     FOOTER SECTION (Modern Glass Columns)
+     ========================================================================== -->
+  <footer class="l-footer">
+    <div class="l-container">
+      <div class="l-footer__top">
+        <div class="l-footer__about">
+          <div class="l-footer__logo">
+            <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.85rem; letter-spacing: -0.02em; color: var(--color-bg-white); display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+              <i class="fa-solid fa-sun" style="color: var(--color-iwami);"></i>
+              TAIYO
+            </span>
+          </div>
+          <p class="l-footer__desc">
+            株式会社太陽コミュニケーションズは、スイミングスクールおよび総合フィットネスクラブの運営を通じて、山口・島根エリア of 健康づくりと心豊かなライフスタイルの創出に貢献します。
+          </p>
+        </div>
+
+        <div class="l-footer__grid">
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-hagi">萩店</h4>
+            <address class="l-footer__address">
+              〒758-0063<br>
+              山口県萩市大字山田字東沖田4286番地
+            </address>
+            <a href="tel:0838-25-5656" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0838-25-5656</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-hagi.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-nagato">長門店</h4>
+            <address class="l-footer__address">
+              〒759-4101<br>
+              山口県長門市東深川1394-1
+            </address>
+            <a href="tel:0837-22-1600" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0837-22-1600</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-nagato.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-hofu">防府店</h4>
+            <address class="l-footer__address">
+              〒747-0849<br>
+              山口県防府市西仁井令1丁目12-7
+            </address>
+            <a href="tel:0835-28-7588" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0835-28-7588</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-hofu.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-iwami">石見店</h4>
+            <address class="l-footer__address">
+              〒698-0024<br>
+              島根県益田市駅前町37-13
+            </address>
+            <a href="tel:0856-23-5581" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0856-23-5581</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-iwami.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-footer__bottom">
+        <small class="l-footer__copyright">&copy; 株式会社太陽コミュニケーションズ 太陽フィットネスクラブ. All Rights Reserved.</small>
+        
+        <div class="l-footer__sns">
+          <a href="#" class="l-footer__sns-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="color: var(--color-bg-white);"></i></a>
+          <a href="#" class="l-footer__sns-link" aria-label="Instagram"><i class="fa-brands fa-instagram" style="color: var(--color-bg-white);"></i></a>
+          <a href="#" class="l-footer__sns-link" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color: var(--color-bg-white);"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

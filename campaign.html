@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>キャンペーン・体験予約 | 太陽フィットネスクラブ | 山口県・島根県のスイミング教室</title>
+  <meta name="description" content="【太陽フィットネスクラブ】の最新お得な入会キャンペーン情報。こどもスイミングスクール1日無料体験、大人メンバー体験・当日入会金割引のご案内。WEBから簡単体験予約可能。">
+  <meta name="keywords" content="スイミング無料体験,ジム体験予約,太陽フィットネスクラブキャンペーン,入会割引,山口県,島根県">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    .p-page-hero {
+      position: relative;
+      height: 360px;
+      background: linear-gradient(135deg, rgba(255, 126, 65, 0.9) 0%, rgba(15, 23, 42, 0.8) 100%), 
+                  url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      color: var(--color-bg-white);
+      z-index: 1;
+    }
+    
+    .p-page-hero__wave {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      line-height: 0;
+      z-index: 3;
+    }
+    
+    .p-page-hero__wave svg {
+      width: 100%;
+      height: 40px;
+      fill: var(--color-bg-base);
+    }
+
+    .p-camp-card {
+      background-color: var(--color-bg-white);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-md);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      transition: var(--transition-normal);
+      margin-bottom: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .p-camp-card {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .p-camp-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .p-form-group {
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .p-form-label {
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: var(--color-dark);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .p-form-input {
+      width: 100%;
+      background-color: var(--color-bg-base);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem;
+      font-size: 0.95rem;
+      color: var(--color-dark);
+      transition: var(--transition-fast);
+    }
+
+    .p-form-input:focus {
+      border-color: var(--color-iwami);
+      box-shadow: var(--shadow-glow-iwami);
+      background-color: var(--color-bg-white);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+     HEADER SECTION (Sticky Glassmorphic Nav)
+     ========================================================================== -->
+  <header class="l-header" id="header">
+    <div class="l-container l-header__container">
+      <div class="l-header__logo">
+        <a href="./index.html">
+          <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.65rem; letter-spacing: -0.02em; color: var(--color-dark); display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-solid fa-sun" style="color: var(--color-iwami); filter: drop-shadow(0 2px 8px rgba(255, 126, 65, 0.4));"></i>
+            TAIYO<span style="color: var(--color-primary); font-weight: 500; font-size: 0.95rem; letter-spacing: 0.1em; border-left: 2px solid var(--color-border); padding-left: 0.5rem; margin-left: 0.25rem;">FITNESS CLUB</span>
+          </span>
+        </a>
+      </div>
+      
+      <nav class="l-header__nav" aria-label="メインナビゲーション">
+        <ul class="p-global-nav">
+          <li class="p-global-nav__item">
+            <a href="./index.html" class="p-global-nav__link">ホーム</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./greeting.html" class="p-global-nav__link">代表挨拶</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link">店舗一覧 <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./shop-hagi.html">萩店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-nagato.html">長門店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-hofu.html">防府店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-iwami.html">石見店</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link">プログラム <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./program-child.html">こどもスクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./program-adult.html">大人スクール</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./campaign.html" class="p-global-nav__link" style="color: var(--color-primary);">キャンペーン</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./blog.html" class="p-global-nav__link">スタッフブログ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="./recruit.html" class="l-header__cta">
+        採用情報 <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem; font-size: 0.8rem;"></i>
+      </a>
+
+      <!-- Mobile Hamburger button -->
+      <div class="l-header__hamburger" id="hamburger" aria-expanded="false" aria-label="メニューを開閉する">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <nav class="p-mobile-nav" id="mobile-nav" aria-label="モバイルナビゲーション">
+    <ul class="p-mobile-nav__list">
+      <li><a href="./index.html" class="p-mobile-nav__link">ホーム</a></li>
+      <li><a href="./greeting.html" class="p-mobile-nav__link">代表挨拶</a></li>
+      <li>
+        <span class="p-mobile-nav__link" style="opacity: 0.5; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-top: 1rem;">店舗一覧</span>
+        <ul class="p-mobile-nav__sublist">
+          <li><a href="./shop-hagi.html" class="p-mobile-nav__sublink">萩店</a></li>
+          <li><a href="./shop-nagato.html" class="p-mobile-nav__sublink">長門店</a></li>
+          <li><a href="./shop-hofu.html" class="p-mobile-nav__sublink">防府店</a></li>
+          <li><a href="./shop-iwami.html" class="p-mobile-nav__sublink">石見店</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="p-mobile-nav__link" style="opacity: 0.5; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-top: 1rem;">プログラム</span>
+        <ul class="p-mobile-nav__sublist">
+          <li><a href="./program-child.html" class="p-mobile-nav__sublink">こどもスクール</a></li>
+          <li><a href="./program-adult.html" class="p-mobile-nav__sublink">大人スクール</a></li>
+        </ul>
+      </li>
+      <li><a href="./campaign.html" class="p-mobile-nav__link" style="color: var(--color-primary);">キャンペーン</a></li>
+      <li><a href="./blog.html" class="p-mobile-nav__link">ブログ</a></li>
+      <li><a href="./recruit.html" class="p-mobile-nav__link" style="color: var(--color-nagato);">採用情報</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==========================================================================
+     PAGE HERO (Campaign Header)
+     ========================================================================== -->
+  <section class="p-page-hero">
+    <div class="l-container">
+      <div style="max-width: 600px;">
+        <span style="font-family: var(--font-head); font-weight: 800; letter-spacing: 0.15em; color: var(--color-dark); display: block; margin-bottom: 0.5rem; text-transform: uppercase;">Special Campaign</span>
+        <h1 style="font-size: 3rem; font-weight: 900; line-height: 1.2; margin-bottom: 1rem; color: var(--color-bg-white);">キャンペーン・体験予約</h1>
+        <p style="opacity: 0.9; font-size: 1.05rem;">ただいま体験レッスン受付中！お得な入会特典もご用意。</p>
+      </div>
+    </div>
+    <div class="p-page-hero__wave">
+      <svg viewBox="0 0 1440 40" preserveAspectRatio="none">
+        <path d="M0,15L120,18.3C240,22,480,28,720,28.3C960,28,1200,22,1320,18.3L1440,15L1440,40L1320,40C1200,40,960,40,720,40C480,40,240,40,120,40L0,40Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     CAMPAIGN CONTENT
+     ========================================================================== -->
+  <section style="padding: 5rem 0;">
+    <div class="l-container" style="max-width: 1000px;">
+      
+      <!-- Campaign 1: Child -->
+      <div class="p-camp-card u-fade-up">
+        <div style="background: linear-gradient(135deg, rgba(13, 109, 192, 0.8) 0%, rgba(0, 194, 146, 0.8) 100%), url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=600&q=80') center center; background-size: cover; padding: 3rem; color: white; display: flex; flex-direction: column; justify-content: center; min-height: 350px;">
+          <span style="font-family: var(--font-head); font-weight: 800; font-size: 0.9rem; letter-spacing: 0.1em; color: var(--color-iwami); text-transform: uppercase;">For Kids</span>
+          <h2 style="font-size: 2rem; font-weight: 900; color: white; margin-bottom: 1rem;">こどもスイミングスクール<br>1日無料体験レッスン</h2>
+          <p style="font-size: 0.95rem; opacity: 0.9;">実際のこどもクラスに一緒に混ざって、楽しいレッスンを体験できます。水慣れの基礎からプロコーチが優しくサポート。</p>
+        </div>
+        <div style="padding: 3rem; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="font-weight: 900; font-size: 1.35rem; margin-bottom: 1.5rem; color: var(--color-dark);"><i class="fa-solid fa-gift" style="color: var(--color-primary); margin-right: 0.5rem;"></i> 体験当日入会 特典</h3>
+          <ul style="display: flex; flex-direction: column; gap: 0.75rem; color: var(--color-slate-gray); font-size: 0.95rem; margin-bottom: 2rem;">
+            <li><i class="fa-solid fa-circle-check" style="color: var(--color-primary); margin-right: 0.5rem;"></i> <strong>入会登録料（通常 ¥3,300） → 無料！</strong></li>
+            <li><i class="fa-solid fa-circle-check" style="color: var(--color-primary); margin-right: 0.5rem;"></i> <strong>初月月謝 → 半額！</strong></li>
+            <li><i class="fa-solid fa-circle-check" style="color: var(--color-primary); margin-right: 0.5rem;"></i> <strong>スクール指定水着＆オリジナルバッグ → プレゼント！</strong></li>
+          </ul>
+          <a href="#trial-form" class="c-btn c-btn--primary" style="align-self: flex-start;">このキャンペーンで予約する <i class="fa-solid fa-angle-right" style="margin-left: 0.5rem;"></i></a>
+        </div>
+      </div>
+
+      <!-- Campaign 2: Adult -->
+      <div class="p-camp-card u-fade-up">
+        <div style="background: linear-gradient(135deg, rgba(226, 75, 139, 0.8) 0%, rgba(255, 126, 65, 0.8) 100%), url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80') center center; background-size: cover; padding: 3rem; color: white; display: flex; flex-direction: column; justify-content: center; min-height: 350px;">
+          <span style="font-family: var(--font-head); font-weight: 800; font-size: 0.9rem; letter-spacing: 0.1em; color: var(--color-dark); text-transform: uppercase;">For Adults</span>
+          <h2 style="font-size: 2rem; font-weight: 900; color: white; margin-bottom: 1rem;">大人フィットネスメンバー<br>施設お試し体験</h2>
+          <p style="font-size: 0.95rem; opacity: 0.9;">温水プールでの自由遊泳、ジムマシンエリアの使い放題、各種ヨガスタジオプログラムをお気軽にお試しいただけます。</p>
+        </div>
+        <div style="padding: 3rem; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="font-weight: 900; font-size: 1.35rem; margin-bottom: 1.5rem; color: var(--color-dark);"><i class="fa-solid fa-gift" style="color: var(--color-nagato); margin-right: 0.5rem;"></i> 体験当日入会 特典</h3>
+          <ul style="display: flex; flex-direction: column; gap: 0.75rem; color: var(--color-slate-gray); font-size: 0.95rem; margin-bottom: 2rem;">
+            <li><i class="fa-solid fa-circle-check" style="color: var(--color-nagato); margin-right: 0.5rem;"></i> <strong>事務手数料・登録料（通常 ¥5,500） → 無料！</strong></li>
+            <li><i class="fa-solid fa-circle-check" style="color: var(--color-nagato); margin-right: 0.5rem;"></i> <strong>体験料（通常 ¥1,100） → 無料（キャッシュバック）！</strong></li>
+            <li><i class="fa-solid fa-circle-check" style="color: var(--color-nagato); margin-right: 0.5rem;"></i> <strong>当月月会費 → 100%無料（翌月からの課金）！</strong></li>
+          </ul>
+          <a href="#trial-form" class="c-btn c-btn--primary" style="background: var(--grad-nagato); box-shadow: var(--shadow-glow-nagato); align-self: flex-start;">このキャンペーンで予約する <i class="fa-solid fa-angle-right" style="margin-left: 0.5rem;"></i></a>
+        </div>
+      </div>
+
+      <!-- Trial Booking Form -->
+      <div id="trial-form" style="background-color: var(--color-bg-white); border-radius: var(--radius-md); padding: 4rem; border: 1px solid var(--color-border); box-shadow: var(--shadow-lg); max-width: 750px; margin: 0 auto; text-align: center;" class="u-fade-up">
+        <span style="font-family: var(--font-head); font-weight: 800; color: var(--color-iwami); font-size: 0.95rem; letter-spacing: 0.15em; display: block; margin-bottom: 0.5rem; text-transform: uppercase;">Trial Booking Form</span>
+        <h3 style="font-size: 1.85rem; font-weight: 900; margin-bottom: 1rem; color: var(--color-dark);">体験レッスン簡単WEB予約</h3>
+        <p style="color: var(--color-slate-gray); margin-bottom: 2.5rem; font-size: 0.95rem;">
+          体験希望の店舗、コース、日時などを選択して送信してください。<br>
+          送信完了後、ご希望の店舗よりスケジュール確認のためお電話またはメールにてご連絡差し上げます。
+        </p>
+
+        <form action="#" method="post" onsubmit="event.preventDefault(); alert('体験予約を受付いたしました。店舗担当者より折り返しのご連絡を差し上げます。ご予約ありがとうございます。');">
+          <div class="p-form-group">
+            <label class="p-form-label" for="trial-shop">希望店舗</label>
+            <select class="p-form-input" id="trial-shop" required>
+              <option value="">希望店舗を選択してください</option>
+              <option value="hagi">萩店</option>
+              <option value="nagato">長門店</option>
+              <option value="hofu">防府店</option>
+              <option value="iwami">石見店</option>
+            </select>
+          </div>
+          
+          <div class="p-form-group">
+            <label class="p-form-label" for="trial-course">希望体験コース</label>
+            <select class="p-form-input" id="trial-course" required>
+              <option value="">体験するコースを選択してください</option>
+              <option value="child-baby">親子ベビー・乳幼児スクール（こども）</option>
+              <option value="child-regular">幼児・児童スイミングスクール（こども）</option>
+              <option value="adult-pool">プールフィットネス・大人水泳（大人）</option>
+              <option value="adult-yoga">スタジオヨガ・エアロビクラス（大人）</option>
+              <option value="adult-gym">マシンジムお試し（大人）</option>
+            </select>
+          </div>
+
+          <div class="p-form-group">
+            <label class="p-form-label" for="trial-date">希望候補日（第1希望）</label>
+            <input class="p-form-input" id="trial-date" type="text" placeholder="例：2026年6月10日（水）午前希望" required>
+          </div>
+
+          <div class="p-form-group">
+            <label class="p-form-label" for="trial-name">参加者氏名（こどもの場合は保護者名もあわせてご記入ください）</label>
+            <input class="p-form-input" id="trial-name" type="text" placeholder="例：太陽 太郎（保護者名：太陽 健二）" required>
+          </div>
+
+          <div class="p-form-group">
+            <label class="p-form-label" for="trial-age">参加者年齢（生年月日）</label>
+            <input class="p-form-input" id="trial-age" type="text" placeholder="例：8歳（2018年5月1日）" required>
+          </div>
+
+          <div class="p-form-group">
+            <label class="p-form-label" for="trial-email">ご連絡先メールアドレス</label>
+            <input class="p-form-input" id="trial-email" type="email" placeholder="example@domain.com" required>
+          </div>
+
+          <div class="p-form-group">
+            <label class="p-form-label" for="trial-tel">ご連絡先電話番号</label>
+            <input class="p-form-input" id="trial-tel" type="tel" placeholder="000-0000-0000" required>
+          </div>
+
+          <div class="p-form-group">
+            <label class="p-form-label" for="trial-msg">ご質問・ご要望など（水泳の経験有無など）</label>
+            <textarea class="p-form-input" id="trial-msg" rows="4" placeholder="「水に入るのが初めてで怖がっています」「ヨガは初心者ですが大丈夫ですか」等、気になることがありましたらお気軽にご記入ください。" style="resize: vertical;"></textarea>
+          </div>
+          
+          <button class="c-btn c-btn--primary" type="submit" style="width: 100%; border: none; margin-top: 1rem; background: var(--grad-iwami); box-shadow: var(--shadow-glow-iwami);">
+            体験を予約する <i class="fa-solid fa-calendar-check" style="margin-left: 0.5rem;"></i>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     FOOTER SECTION (Modern Glass Columns)
+     ========================================================================== -->
+  <footer class="l-footer">
+    <div class="l-container">
+      <div class="l-footer__top">
+        <div class="l-footer__about">
+          <div class="l-footer__logo">
+            <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.85rem; letter-spacing: -0.02em; color: var(--color-bg-white); display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+              <i class="fa-solid fa-sun" style="color: var(--color-iwami);"></i>
+              TAIYO
+            </span>
+          </div>
+          <p class="l-footer__desc">
+            株式会社太陽コミュニケーションズは、スイミングスクールおよび総合フィットネスクラブの運営を通じて、山口・島根エリアの健康づくりと心豊かなライフスタイルの創出に貢献します。
+          </p>
+        </div>
+
+        <div class="l-footer__grid">
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-hagi">萩店</h4>
+            <address class="l-footer__address">
+              〒758-0063<br>
+              山口県萩市大字山田字東沖田4286番地
+            </address>
+            <a href="tel:0838-25-5656" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0838-25-5656</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-hagi.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-nagato">長門店</h4>
+            <address class="l-footer__address">
+              〒759-4101<br>
+              山口県長門市東深川1394-1
+            </address>
+            <a href="tel:0837-22-1600" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0837-22-1600</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-nagato.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-hofu">防府店</h4>
+            <address class="l-footer__address">
+              〒747-0849<br>
+              山口県防府市西仁井令1丁目12-7
+            </address>
+            <a href="tel:0835-28-7588" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0835-28-7588</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-hofu.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-iwami">石見店</h4>
+            <address class="l-footer__address">
+              〒698-0024<br>
+              島根県益田市駅前町37-13
+            </address>
+            <a href="tel:0856-23-5581" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0856-23-5581</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-iwami.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-footer__bottom">
+        <small class="l-footer__copyright">&copy; 株式会社太陽コミュニケーションズ 太陽フィットネスクラブ. All Rights Reserved.</small>
+        
+        <div class="l-footer__sns">
+          <a href="#" class="l-footer__sns-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="color: var(--color-bg-white);"></i></a>
+          <a href="#" class="l-footer__sns-link" aria-label="Instagram"><i class="fa-brands fa-instagram" style="color: var(--color-bg-white);"></i></a>
+          <a href="#" class="l-footer__sns-link" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color: var(--color-bg-white);"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

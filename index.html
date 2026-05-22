@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>太陽フィットネスクラブ | 山口県・島根県のスイミングスクール＆フィットネスクラブ</title>
+  <meta name="description" content="【太陽フィットネスクラブ】は山口県萩市、長門市、防府市、島根県益田市（石見）に展開する、子どもから大人まで楽しくトレーニングできる水泳教室＆フィットネスクラブです。アクアビクス、エアロビクス、ヨガなども開催中。">
+  <meta name="keywords" content="太陽フィットネスクラブ,スイミングスクール,フィットネス,山口県,萩市,長門市,防府市,島根県益田市,ヨガ,アクアビクス,水泳教室">
+  
+  <!-- OG Meta Tags -->
+  <meta property="og:url" content="https://www.taiyo-communications.co.jp/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="太陽フィットネスクラブ | 山口県・島根県のスイミングスクール＆フィットネスクラブ">
+  <meta property="og:description" content="水泳を通して育まれる『体』と『心』。山口県と島根県で子どもから大人まで楽しくトレーニングできる水泳教室＆フィットネスクラブ。">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+     HEADER SECTION (Sticky Glassmorphic Nav)
+     ========================================================================== -->
+  <header class="l-header" id="header">
+    <div class="l-container l-header__container">
+      <div class="l-header__logo">
+        <a href="./index.html">
+          <!-- Premium modern vector-inspired text logo representation -->
+          <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.65rem; letter-spacing: -0.02em; color: var(--color-dark); display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-solid fa-sun" style="color: var(--color-iwami); filter: drop-shadow(0 2px 8px rgba(255, 126, 65, 0.4));"></i>
+            TAIYO<span style="color: var(--color-primary); font-weight: 500; font-size: 0.95rem; letter-spacing: 0.1em; border-left: 2px solid var(--color-border); padding-left: 0.5rem; margin-left: 0.25rem;">FITNESS CLUB</span>
+          </span>
+        </a>
+      </div>
+      
+      <nav class="l-header__nav" aria-label="メインナビゲーション">
+        <ul class="p-global-nav">
+          <li class="p-global-nav__item">
+            <a href="./index.html" class="p-global-nav__link">ホーム</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./greeting.html" class="p-global-nav__link">代表挨拶</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link">店舗一覧 <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./shop-hagi.html">萩店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-nagato.html">長門店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-hofu.html">防府店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-iwami.html">石見店</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link">プログラム <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./program-child.html">こどもスクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./program-adult.html">大人スクール</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./campaign.html" class="p-global-nav__link">キャンペーン</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./blog.html" class="p-global-nav__link">スタッフブログ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="./recruit.html" class="l-header__cta">
+        採用情報 <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem; font-size: 0.8rem;"></i>
+      </a>
+
+      <!-- Mobile Hamburger button -->
+      <div class="l-header__hamburger" id="hamburger" aria-expanded="false" aria-label="メニューを開閉する">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <nav class="p-mobile-nav" id="mobile-nav" aria-label="モバイルナビゲーション">
+    <ul class="p-mobile-nav__list">
+      <li><a href="./index.html" class="p-mobile-nav__link">ホーム</a></li>
+      <li><a href="./greeting.html" class="p-mobile-nav__link">代表挨拶</a></li>
+      <li>
+        <span class="p-mobile-nav__link" style="opacity: 0.5; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-top: 1rem;">店舗一覧</span>
+        <ul class="p-mobile-nav__sublist">
+          <li><a href="./shop-hagi.html" class="p-mobile-nav__sublink">萩店</a></li>
+          <li><a href="./shop-nagato.html" class="p-mobile-nav__sublink">長門店</a></li>
+          <li><a href="./shop-hofu.html" class="p-mobile-nav__sublink">防府店</a></li>
+          <li><a href="./shop-iwami.html" class="p-mobile-nav__sublink">石見店</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="p-mobile-nav__link" style="opacity: 0.5; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-top: 1rem;">プログラム</span>
+        <ul class="p-mobile-nav__sublist">
+          <li><a href="./program-child.html" class="p-mobile-nav__sublink">こどもスクール</a></li>
+          <li><a href="./program-adult.html" class="p-mobile-nav__sublink">大人スクール</a></li>
+        </ul>
+      </li>
+      <li><a href="./campaign.html" class="p-mobile-nav__link">キャンペーン</a></li>
+      <li><a href="./blog.html" class="p-mobile-nav__link">ブログ</a></li>
+      <li><a href="./recruit.html" class="p-mobile-nav__link" style="color: var(--color-nagato);">採用情報</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==========================================================================
+     HERO SECTION (Visual Slide & Dynamic Catch)
+     ========================================================================== -->
+  <section class="p-hero">
+    <div class="p-hero__slider">
+      <div class="p-hero__slide is-active" style="background-image: url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1600&q=80');"></div>
+      <div class="p-hero__slide" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80');"></div>
+      <div class="p-hero__slide" style="background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1600&q=80');"></div>
+    </div>
+    
+    <div class="l-container">
+      <div class="p-hero__content">
+        <div class="p-hero__headline">
+          <span class="p-hero__headline-sub">TAIYO FITNESS CLUB</span>
+          <h1 class="p-hero__headline-main">
+            健康なくして<br>
+            <span class="highlight">幸福は得られない</span>
+          </h1>
+        </div>
+        <p class="p-hero__description">
+          水泳を通して育まれる強健な体と充実した豊かな心。<br>
+          山口県・島根県に根ざし、お子様からシニアまで一人ひとりの「進化」を全力でサポートいたします。
+        </p>
+        <div class="p-hero__btn-group">
+          <a href="#branches" class="c-btn c-btn--primary">
+            店舗一覧を見る <span class="c-btn__arrow">→</span>
+          </a>
+          <a href="./campaign.html" class="c-btn c-btn--outline">
+            お得な体験キャンペーン <span class="c-btn__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slanted bottom divider -->
+    <div class="p-hero__wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,120L1320,120C1200,120,960,120,720,120C480,120,240,120,120,120L0,120Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     CONCEPT & VALUE PROPOSITION
+     ========================================================================== -->
+  <section class="p-intro u-fade-up">
+    <div class="l-container p-intro__grid">
+      <div class="p-intro__img-box">
+        <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=600&q=80" alt="水泳を楽しむ子どもたちと明るい笑顔のスタッフ" loading="lazy">
+      </div>
+      <div class="p-intro__content">
+        <span class="p-intro__subtitle">Our Philosophy</span>
+        <h2 class="p-intro__title">
+          水泳を通して育まれる<br>
+          <span class="highlight">「体」と「心」の健康</span>
+        </h2>
+        <p class="p-intro__text">
+          太陽フィットネスクラブは、子どもから大人まで楽しくトレーニングできる水泳教室＆総合フィットネスクラブです。
+          充実したプール設備と最新ジムマシン、ホットヨガやアクアビクスなど、多彩なメニューをご用意しております。
+        </p>
+        <p class="p-intro__text" style="margin-top: -1.5rem; margin-bottom: 2.5rem;">
+          私たちはスタッフ一人ひとりの指導力と笑顔を大切にしており、徹底した安全管理のもと、地域の皆様がより健康でイキイキと暮らせるコミュニティづくりに貢献します。
+        </p>
+        <div>
+          <a href="./greeting.html" class="c-btn c-btn--outline-dark">
+            代表挨拶を読む <span class="c-btn__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     BRANCH STORES GRID SECTION (#branches)
+     ========================================================================== -->
+  <section id="branches" style="padding: 6rem 0; background-color: var(--color-bg-base);">
+    <div class="l-container">
+      <div class="c-section-title u-fade-up">
+        <span class="c-section-title__sub">Locations</span>
+        <h2 class="c-section-title__main">店舗一覧</h2>
+      </div>
+
+      <div class="l-grid l-grid--4col u-fade-up">
+        <!-- HAGI SHOP -->
+        <article class="c-card p-branch-card p-branch-card--hagi">
+          <div class="p-branch-card__img-wrapper">
+            <span class="p-branch-card__tag">萩店</span>
+            <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=400&q=80" alt="太陽フィットネスクラブ 萩店" loading="lazy">
+          </div>
+          <div class="p-branch-card__body">
+            <h3 class="p-branch-card__title">萩店</h3>
+            <span class="p-branch-card__subtitle">Hagi Club</span>
+            <p class="p-branch-card__desc">
+              萩市の中心部で愛される総合クラブ。充実したこども水泳教室から大人向けのアクアビクスまで幅広く対応しています。
+            </p>
+            <div class="p-branch-card__info-row">
+              <span class="p-branch-card__tel-label">Tel</span>
+              <span class="p-branch-card__tel-num">0838-25-5656</span>
+            </div>
+            <a href="./shop-hagi.html" class="p-branch-card__btn">
+              店舗情報を見る <i class="fa-solid fa-angle-right" style="margin-left: 0.5rem;"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- NAGATO SHOP -->
+        <article class="c-card p-branch-card p-branch-card--nagato u-delay-100">
+          <div class="p-branch-card__img-wrapper">
+            <span class="p-branch-card__tag">長門店</span>
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=400&q=80" alt="太陽フィットネスクラブ 長門店" loading="lazy">
+          </div>
+          <div class="p-branch-card__body">
+            <h3 class="p-branch-card__title">長門店</h3>
+            <span class="p-branch-card__subtitle">Nagato Club</span>
+            <p class="p-branch-card__desc">
+              明るくアットホームな雰囲気が自慢の店舗。水泳を通じて、お子さまの強い心と協調性を育む独自の指導が人気です。
+            </p>
+            <div class="p-branch-card__info-row">
+              <span class="p-branch-card__tel-label">Tel</span>
+              <span class="p-branch-card__tel-num">0837-22-1600</span>
+            </div>
+            <a href="./shop-nagato.html" class="p-branch-card__btn">
+              店舗情報を見る <i class="fa-solid fa-angle-right" style="margin-left: 0.5rem;"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- HOFU SHOP -->
+        <article class="c-card p-branch-card p-branch-card--hofu u-delay-200">
+          <div class="p-branch-card__img-wrapper">
+            <span class="p-branch-card__tag">防府店</span>
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80" alt="太陽フィットネスクラブ 防府店" loading="lazy">
+          </div>
+          <div class="p-branch-card__body">
+            <h3 class="p-branch-card__title">防府店</h3>
+            <span class="p-branch-card__subtitle">Hofu Club</span>
+            <p class="p-branch-card__desc">
+              最新ジムマシンエリア、スタジオプログラム、温水プールを完備した、健康志向の大人にも最適なフィットネスクラブ。
+            </p>
+            <div class="p-branch-card__info-row">
+              <span class="p-branch-card__tel-label">Tel</span>
+              <span class="p-branch-card__tel-num">0835-28-7588</span>
+            </div>
+            <a href="./shop-hofu.html" class="p-branch-card__btn">
+              店舗情報を見る <i class="fa-solid fa-angle-right" style="margin-left: 0.5rem;"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- IWAMI SHOP -->
+        <article class="c-card p-branch-card p-branch-card--iwami u-delay-300">
+          <div class="p-branch-card__img-wrapper">
+            <span class="p-branch-card__tag">石見店</span>
+            <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=400&q=80" alt="太陽フィットネスクラブ 石見店" loading="lazy">
+          </div>
+          <div class="p-branch-card__body">
+            <h3 class="p-branch-card__title">石見店</h3>
+            <span class="p-branch-card__subtitle">Iwami Club</span>
+            <p class="p-branch-card__desc">
+              島根県益田市に位置する県境のクラブ。健康維持やリハビリ、シェイプアップに特化した運動教室が豊富です。
+            </p>
+            <div class="p-branch-card__info-row">
+              <span class="p-branch-card__tel-label">Tel</span>
+              <span class="p-branch-card__tel-num">0856-23-5581</span>
+            </div>
+            <a href="./shop-iwami.html" class="p-branch-card__btn">
+              店舗情報を見る <i class="fa-solid fa-angle-right" style="margin-left: 0.5rem;"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     COVID & SAFETY PREVENTIVE COUNTERMEASURES
+     ========================================================================== -->
+  <section style="padding: 6rem 0; background-color: var(--color-bg-white);">
+    <div class="l-container u-fade-up">
+      <div class="p-safety">
+        <div class="p-safety__header">
+          <span class="p-safety__badge">Safety &amp; Cleanliness</span>
+          <h2 class="p-safety__title">安心・安全への取り組み</h2>
+          <p style="color: var(--color-text-sub); margin-top: 1rem;">太陽フィットネスクラブでは、皆様に安心して施設をご利用いただけるよう、万全の衛生・安全管理を行っています。</p>
+        </div>
+
+        <div class="p-safety__grid">
+          <div class="p-safety__box">
+            <h3 class="p-safety__box-title">クラブ独自の安全・防犯対策</h3>
+            <ul class="p-safety__list">
+              <li class="p-safety__item">すべてのプールエリアにライフセーバー・有資格スタッフを常時配置。</li>
+              <li class="p-safety__item">こども教室の送迎スクールバスの運行、安心の添乗体制と防犯カメラの設置。</li>
+              <li class="p-safety__item">緊急時対応訓練（救急救命・AED取扱・避難誘導など）を全スタッフへ毎月実施。</li>
+            </ul>
+          </div>
+          <div class="p-safety__box">
+            <h3 class="p-safety__box-title">感染症予防・徹底クリーン対策</h3>
+            <ul class="p-safety__list">
+              <li class="p-safety__item">高効率の換気ファンおよび吸気システムによる、館内の定期的かつ全面的な空気循環。</li>
+              <li class="p-safety__item">手すり、ドアノブ、更衣室ロッカー、ジムマシンなどの常時アルコール巡回消毒。</li>
+              <li class="p-safety__item">プール水の24時間濾過・徹底した遊離残留塩素濃度の自動検査・徹底した水質監視。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     NEWS & PRESS RELEASE GRID (With Tab System switcher)
+     ========================================================================== -->
+  <section style="padding: 6rem 0; background-color: var(--color-bg-base);">
+    <div class="l-container">
+      <div class="c-section-title u-fade-up">
+        <span class="c-section-title__sub">Information</span>
+        <h2 class="c-section-title__main">お知らせ・更新情報</h2>
+      </div>
+
+      <!-- Tab Buttons System -->
+      <div class="p-tabs u-fade-up">
+        <button class="p-tabs__btn is-active js-news-tab-btn" data-tab="all">すべて</button>
+        <button class="p-tabs__btn js-news-tab-btn" data-tab="info">お知らせ</button>
+        <button class="p-tabs__btn js-news-tab-btn" data-tab="press">プレスリリース</button>
+      </div>
+
+      <!-- News Items Container -->
+      <div class="p-news-grid u-fade-up">
+        
+        <!-- Grid Items: JS dynamically hides/shows them depending on category -->
+        
+        <!-- Card 1 -->
+        <article class="c-card p-news-card js-news-grid" data-category="info">
+          <div class="p-news-card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=400&q=80" alt="水泳中の子ども" loading="lazy">
+          </div>
+          <div class="p-news-card__body">
+            <div class="p-news-card__meta">
+              <time class="p-news-card__date">2026.04.27</time>
+              <span class="p-news-card__tag">お知らせ</span>
+            </div>
+            <h3 class="p-news-card__title">子どもの習い事に迷ったら？🏊‍♂️「スイミング」が不動の人気を誇る理由</h3>
+            <a href="./blog.html" class="p-news-card__link">記事を読む</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="c-card p-news-card js-news-grid" data-category="info">
+          <div class="p-news-card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=400&q=80" alt="笑顔でプールに入る様子" loading="lazy">
+          </div>
+          <div class="p-news-card__body">
+            <div class="p-news-card__meta">
+              <time class="p-news-card__date">2026.04.15</time>
+              <span class="p-news-card__tag">お知らせ</span>
+            </div>
+            <h3 class="p-news-card__title">スイミングで達成感を育てよう！目標を乗り越えて自信をつけるステップ</h3>
+            <a href="./blog.html" class="p-news-card__link">記事を読む</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="c-card p-news-card js-news-grid" data-category="press">
+          <div class="p-news-card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="企業動画編集画面" loading="lazy">
+          </div>
+          <div class="p-news-card__body">
+            <div class="p-news-card__meta">
+              <time class="p-news-card__date">2026.02.20</time>
+              <span class="p-news-card__tag p-news-card__tag--press">プレスリリース</span>
+            </div>
+            <h3 class="p-news-card__title">太陽コミュニケーションズってどんな会社？最新の「企業紹介動画」を公開しました！</h3>
+            <a href="./blog.html" class="p-news-card__link">動画を見る</a>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="c-card p-news-card js-news-grid" data-category="info">
+          <div class="p-news-card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=400&q=80" alt="キャンペーンイメージ" loading="lazy">
+          </div>
+          <div class="p-news-card__body">
+            <div class="p-news-card__meta">
+              <time class="p-news-card__date">2026.01.09</time>
+              <span class="p-news-card__tag">お知らせ</span>
+            </div>
+            <h3 class="p-news-card__title">【2026年 新春】年初めにスタートする「新春トライアルキャンペーン」受付開始！</h3>
+            <a href="./campaign.html" class="p-news-card__link">キャンペーン詳細</a>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="c-card p-news-card js-news-grid" data-category="press">
+          <div class="p-news-card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&w=400&q=80" alt="子ども水泳指導" loading="lazy">
+          </div>
+          <div class="p-news-card__body">
+            <div class="p-news-card__meta">
+              <time class="p-news-card__date">2024.06.14</time>
+              <span class="p-news-card__tag p-news-card__tag--press">プレスリリース</span>
+            </div>
+            <h3 class="p-news-card__title">地域の小学校水泳授業の受託実績を拡大。専門インストラクターによる学校水泳委託のご案内</h3>
+            <a href="./business.html" class="p-news-card__link">詳細を見る</a>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="c-card p-news-card js-news-grid" data-category="info">
+          <div class="p-news-card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=400&q=80" alt="ヨガ養成教室" loading="lazy">
+          </div>
+          <div class="p-news-card__body">
+            <div class="p-news-card__meta">
+              <time class="p-news-card__date">2026.01.06</time>
+              <span class="p-news-card__tag">お知らせ</span>
+            </div>
+            <h3 class="p-news-card__title">【ヨガインストラクター】養成講座2026年度生の募集が始まりました（萩・防府エリア）</h3>
+            <a href="./blog.html" class="p-news-card__link">要項を見る</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     LINK BANNERS & GATEWAY (Recruit & Business Partnerships)
+     ========================================================================== -->
+  <section style="padding: 6rem 0; background-color: var(--color-bg-white);">
+    <div class="l-container">
+      <div class="p-banners u-fade-up">
+        
+        <!-- Partnership Banner -->
+        <article class="p-banner-card">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80" alt="ミーティングの様子" class="p-banner-card__bg" loading="lazy">
+          <div class="p-banner-card__content">
+            <span class="p-banner-card__tag">Corporate Collaboration</span>
+            <h3 class="p-banner-card__title">学校水泳・地域連携事業</h3>
+            <p class="p-banner-card__desc">学校の水泳授業受託や、地域の公共スポーツ連携事業など、多様な自治体・教育連携プロジェクトを行っています。</p>
+            <a href="./business.html" class="p-banner-card__btn">連携事業の詳細</a>
+          </div>
+        </article>
+
+        <!-- Recruit Banner -->
+        <article class="p-banner-card p-banner-card--recruit">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80" alt="元気なスタッフチーム" class="p-banner-card__bg" loading="lazy">
+          <div class="p-banner-card__content">
+            <span class="p-banner-card__tag">We Are Hiring!</span>
+            <h3 class="p-banner-card__title">リクルート・求人情報</h3>
+            <p class="p-banner-card__desc">「心と体の健康を支える笑顔のチーム」に加わりませんか？インストラクター、フロント、送迎バス等、多様な職種を募集中。</p>
+            <a href="./recruit.html" class="p-banner-card__btn">採用特設サイト</a>
+          </div>
+        </article>
+
+      </div>
+      
+      <!-- Transform Taiyo (Additional Jimdo link representation) -->
+      <div class="u-fade-up" style="background: var(--grad-splashtop); border-radius: var(--radius-md); padding: 3rem; color: var(--color-bg-white); text-align: center; box-shadow: var(--shadow-lg);">
+        <h3 style="font-size: 1.85rem; font-weight: 900; margin-bottom: 0.75rem; color: var(--color-bg-white);">日々、うれしく“進化”できるフィットネスクラブ</h3>
+        <p style="opacity: 0.9; max-width: 700px; margin: 0 auto 2rem auto; font-size: 0.95rem;">
+          最新ジムマシン、ホットヨガ、独自のストレッチマシン完備の「トランスフォーム太陽」で、ココロもカラダも健康に美しく整えましょう。
+        </p>
+        <a href="https://transform-taiyo.jimdofree.com/" target="_blank" rel="noopener" class="c-btn c-btn--outline" style="border-color: var(--color-bg-white);">
+          トランスフォーム太陽 外部サイト <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 0.5rem; font-size: 0.8rem;"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     FOOTER SECTION (Modern Glass Columns)
+     ========================================================================== -->
+  <footer class="l-footer">
+    <div class="l-container">
+      <div class="l-footer__top">
+        <div class="l-footer__about">
+          <div class="l-footer__logo">
+            <!-- Footer Text Logo -->
+            <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.85rem; letter-spacing: -0.02em; color: var(--color-bg-white); display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+              <i class="fa-solid fa-sun" style="color: var(--color-iwami);"></i>
+              TAIYO
+            </span>
+          </div>
+          <p class="l-footer__desc">
+            株式会社太陽コミュニケーションズは、スイミングスクールおよび総合フィットネスクラブの運営を通じて、山口・島根エリアの健康づくりと心豊かなライフスタイルの創出に貢献します。
+          </p>
+        </div>
+
+        <div class="l-footer__grid">
+          <!-- Hagi Column -->
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-hagi">萩店</h4>
+            <address class="l-footer__address">
+              〒758-0063<br>
+              山口県萩市大字山田字東沖田4286番地
+            </address>
+            <a href="tel:0838-25-5656" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0838-25-5656</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-hagi.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <!-- Nagato Column -->
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-nagato">長門店</h4>
+            <address class="l-footer__address">
+              〒759-4101<br>
+              山口県長門市東深川1394-1
+            </address>
+            <a href="tel:0837-22-1600" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0837-22-1600</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-nagato.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <!-- Hofu Column -->
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-hofu">防府店</h4>
+            <address class="l-footer__address">
+              〒747-0849<br>
+              山口県防府市西仁井令1丁目12-7
+            </address>
+            <a href="tel:0835-28-7588" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0835-28-7588</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-hofu.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <!-- Iwami Column -->
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-iwami">石見店</h4>
+            <address class="l-footer__address">
+              〒698-0024<br>
+              島根県益田市駅前町37-13
+            </address>
+            <a href="tel:0856-23-5581" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0856-23-5581</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-iwami.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-footer__bottom">
+        <small class="l-footer__copyright">&copy; 株式会社太陽コミュニケーションズ 太陽フィットネスクラブ. All Rights Reserved.</small>
+        
+        <div class="l-footer__sns">
+          <a href="#" class="l-footer__sns-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="color: var(--color-bg-white);"></i></a>
+          <a href="#" class="l-footer__sns-link" aria-label="Instagram"><i class="fa-brands fa-instagram" style="color: var(--color-bg-white);"></i></a>
+          <a href="#" class="l-footer__sns-link" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color: var(--color-bg-white);"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

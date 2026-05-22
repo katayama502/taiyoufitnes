@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>スタッフブログ | 太陽フィットネスクラブ | 山口県・島根県のスイミング教室</title>
+  <meta name="description" content="【太陽フィットネスクラブ スタッフブログ】のご紹介。各店舗（萩・長門・防府・石見）の日常、水泳の練習コツ、健康的な身体づくりの豆知識など、お役立ち情報を配信中。">
+  <meta name="keywords" content="フィットネスクラブブログ,水泳教室ブログ,太陽フィットネスクラブ,健康豆知識,泳ぎ方コツ,山口県,島根県">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    .p-page-hero {
+      position: relative;
+      height: 360px;
+      background: linear-gradient(135deg, rgba(13, 109, 192, 0.9) 0%, rgba(15, 23, 42, 0.8) 100%), 
+                  url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      color: var(--color-bg-white);
+      z-index: 1;
+    }
+    
+    .p-page-hero__wave {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      line-height: 0;
+      z-index: 3;
+    }
+    
+    .p-page-hero__wave svg {
+      width: 100%;
+      height: 40px;
+      fill: var(--color-bg-base);
+    }
+
+    .p-blog-card {
+      background-color: var(--color-bg-white);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition-normal);
+      height: 100%;
+    }
+
+    .p-blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .p-blog-card__img-wrapper {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .p-blog-card__img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-slow);
+    }
+
+    .p-blog-card:hover .p-blog-card__img-wrapper img {
+      transform: scale(1.05);
+    }
+
+    .p-blog-card__body {
+      padding: 2rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .p-blog-card__meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .p-blog-card__date {
+      font-family: var(--font-num);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--color-text-sub);
+    }
+
+    .p-blog-card__tag {
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      background-color: rgba(13, 109, 192, 0.06);
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+    }
+
+    .p-blog-card__title {
+      font-size: 1.15rem;
+      font-weight: 900;
+      line-height: 1.4;
+      color: var(--color-dark);
+      margin-bottom: 1rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      flex-grow: 1;
+    }
+
+    .p-blog-card__link {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      margin-top: 1.5rem;
+    }
+
+    .p-blog-card__link::after {
+      content: '→';
+      transition: var(--transition-fast);
+    }
+
+    .p-blog-card:hover .p-blog-card__link::after {
+      transform: translateX(3px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+     HEADER SECTION (Sticky Glassmorphic Nav)
+     ========================================================================== -->
+  <header class="l-header" id="header">
+    <div class="l-container l-header__container">
+      <div class="l-header__logo">
+        <a href="./index.html">
+          <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.65rem; letter-spacing: -0.02em; color: var(--color-dark); display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-solid fa-sun" style="color: var(--color-iwami); filter: drop-shadow(0 2px 8px rgba(255, 126, 65, 0.4));"></i>
+            TAIYO<span style="color: var(--color-primary); font-weight: 500; font-size: 0.95rem; letter-spacing: 0.1em; border-left: 2px solid var(--color-border); padding-left: 0.5rem; margin-left: 0.25rem;">FITNESS CLUB</span>
+          </span>
+        </a>
+      </div>
+      
+      <nav class="l-header__nav" aria-label="メインナビゲーション">
+        <ul class="p-global-nav">
+          <li class="p-global-nav__item">
+            <a href="./index.html" class="p-global-nav__link">ホーム</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./greeting.html" class="p-global-nav__link">代表挨拶</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link">店舗一覧 <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./shop-hagi.html">萩店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-nagato.html">長門店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-hofu.html">防府店</a></li>
+                <li class="p-dropdown-list__item"><a href="./shop-iwami.html">石見店</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link">プログラム <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./program-child.html">こどもスクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./program-adult.html">大人スクール</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./campaign.html" class="p-global-nav__link">キャンペーン</a>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./blog.html" class="p-global-nav__link" style="color: var(--color-primary);">スタッフブログ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="./recruit.html" class="l-header__cta">
+        採用情報 <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem; font-size: 0.8rem;"></i>
+      </a>
+
+      <!-- Mobile Hamburger button -->
+      <div class="l-header__hamburger" id="hamburger" aria-expanded="false" aria-label="メニューを開閉する">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <nav class="p-mobile-nav" id="mobile-nav" aria-label="モバイルナビゲーション">
+    <ul class="p-mobile-nav__list">
+      <li><a href="./index.html" class="p-mobile-nav__link">ホーム</a></li>
+      <li><a href="./greeting.html" class="p-mobile-nav__link">代表挨拶</a></li>
+      <li>
+        <span class="p-mobile-nav__link" style="opacity: 0.5; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-top: 1rem;">店舗一覧</span>
+        <ul class="p-mobile-nav__sublist">
+          <li><a href="./shop-hagi.html" class="p-mobile-nav__sublink">萩店</a></li>
+          <li><a href="./shop-nagato.html" class="p-mobile-nav__sublink">長門店</a></li>
+          <li><a href="./shop-hofu.html" class="p-mobile-nav__sublink">防府店</a></li>
+          <li><a href="./shop-iwami.html" class="p-mobile-nav__sublink">石見店</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="p-mobile-nav__link" style="opacity: 0.5; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-top: 1rem;">プログラム</span>
+        <ul class="p-mobile-nav__sublist">
+          <li><a href="./program-child.html" class="p-mobile-nav__sublink">こどもスクール</a></li>
+          <li><a href="./program-adult.html" class="p-mobile-nav__sublink">大人スクール</a></li>
+        </ul>
+      </li>
+      <li><a href="./campaign.html" class="p-mobile-nav__link">キャンペーン</a></li>
+      <li><a href="./blog.html" class="p-mobile-nav__link" style="color: var(--color-primary);">ブログ</a></li>
+      <li><a href="./recruit.html" class="p-mobile-nav__link" style="color: var(--color-nagato);">採用情報</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==========================================================================
+     PAGE HERO (Blog Header)
+     ========================================================================== -->
+  <section class="p-page-hero">
+    <div class="l-container">
+      <div style="max-width: 600px;">
+        <span style="font-family: var(--font-head); font-weight: 800; letter-spacing: 0.15em; color: var(--color-iwami); display: block; margin-bottom: 0.5rem; text-transform: uppercase;">Staff Blog</span>
+        <h1 style="font-size: 3rem; font-weight: 900; line-height: 1.2; margin-bottom: 1rem; color: var(--color-bg-white);">スタッフブログ</h1>
+        <p style="opacity: 0.9; font-size: 1.05rem;">プールの日常、練習のコツ、健康やトレーニングのアドバイス。</p>
+      </div>
+    </div>
+    <div class="p-page-hero__wave">
+      <svg viewBox="0 0 1440 40" preserveAspectRatio="none">
+        <path d="M0,15L120,18.3C240,22,480,28,720,28.3C960,28,1200,22,1320,18.3L1440,15L1440,40L1320,40C1200,40,960,40,720,40C480,40,240,40,120,40L0,40Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     BLOG CONTENT
+     ========================================================================== -->
+  <section style="padding: 5rem 0;">
+    <div class="l-container">
+      
+      <!-- Category Switchers (Static Buttons) -->
+      <div class="p-tabs u-fade-up" style="margin-bottom: 4rem; justify-content: center;">
+        <button class="p-tabs__btn is-active" data-tab="all">すべて</button>
+        <button class="p-tabs__btn" data-tab="hagi">萩店</button>
+        <button class="p-tabs__btn" data-tab="nagato">長門店</button>
+        <button class="p-tabs__btn" data-tab="hofu">防府店</button>
+        <button class="p-tabs__btn" data-tab="iwami">石見店</button>
+        <button class="p-tabs__btn" data-tab="tips">お役立ち情報</button>
+      </div>
+
+      <!-- Blog Grid (Modern and beautiful cards) -->
+      <div class="l-grid l-grid--3col u-fade-up" style="gap: 2.5rem; margin-bottom: 5rem;">
+        
+        <!-- Post 1 -->
+        <article class="p-blog-card">
+          <div class="p-blog-card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=400&q=80" alt="水泳中の子ども" loading="lazy">
+          </div>
+          <div class="p-blog-card__body">
+            <div class="p-blog-card__meta">
+              <time class="p-blog-card__date">2026.05.20</time>
+              <span class="p-blog-card__tag">お役立ち情報</span>
+            </div>
+            <h3 class="p-blog-card__title">子どもの習い事にスイミング🏊‍♂️「水泳」が不動の人気を誇る3つの理由</h3>
+            <p style="font-size: 0.85rem; color: var(--color-slate-gray); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+              水泳は子どもの習い事として常にトップクラスの人気です。全身運動効果による強い体づくりから、呼吸機能の向上、目標に向かって進む自信の醸成までその理由を解説します。
+            </p>
+            <a href="#" class="p-blog-card__link">記事を読む</a>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="p-blog-card">
+          <div class="p-blog-card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=400&q=80" alt="ヨガをする様子" loading="lazy">
+          </div>
+          <div class="p-blog-card__body">
+            <div class="p-blog-card__meta">
+              <time class="p-blog-card__date">2026.05.15</time>
+              <span class="p-blog-card__tag">防府店</span>
+            </div>
+            <h3 class="p-blog-card__title">スイミングで達成感を育てよう！24段階テストを乗り越えて自信をつけるステップ</h3>
+            <p style="font-size: 0.85rem; color: var(--color-slate-gray); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+              毎月末に開催される進級テスト。子どもたちにとっては嬉しさと緊張の瞬間です。不合格をどう乗り越え、自己肯定感を育てるか、コーチ陣の工夫を紹介。
+            </p>
+            <a href="#" class="p-blog-card__link">記事を読む</a>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="p-blog-card">
+          <div class="p-blog-card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=400&q=80" alt="笑顔のスタッフ" loading="lazy">
+          </div>
+          <div class="p-blog-card__body">
+            <div class="p-blog-card__meta">
+              <time class="p-blog-card__date">2026.05.08</time>
+              <span class="p-blog-card__tag">萩店</span>
+            </div>
+            <h3 class="p-blog-card__title">【萩店】GW特別キッズ水泳教室レポート！笑顔あふれる4日間の練習成果発表</h3>
+            <p style="font-size: 0.85rem; color: var(--color-slate-gray); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+              ゴールデンウィーク期間中に開催された短期集中スクール。最初は水に顔をつけられなかったお子様が、最終日には元気にバタ足で泳げるようになった様子をお届け。
+            </p>
+            <a href="#" class="p-blog-card__link">記事を読む</a>
+          </div>
+        </article>
+
+        <!-- Post 4 -->
+        <article class="p-blog-card">
+          <div class="p-blog-card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80" alt="ジムトレーニングマシン" loading="lazy">
+          </div>
+          <div class="p-blog-card__body">
+            <div class="p-blog-card__meta">
+              <time class="p-blog-card__date">2026.04.28</time>
+              <span class="p-blog-card__tag">石見店</span>
+            </div>
+            <h3 class="p-blog-card__title">【石見店】初心者向け！ジムマシンの正しい使い方と効果的な有酸素運動メニュー</h3>
+            <p style="font-size: 0.85rem; color: var(--color-slate-gray); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+              石見店のジムエリアに新しく入ったマシンのご紹介。ヒザに負担をかけずに全身を効率よく鍛える方法をインストラクターが動画を交えて徹底解説。
+            </p>
+            <a href="#" class="p-blog-card__link">記事を読む</a>
+          </div>
+        </article>
+
+        <!-- Post 5 -->
+        <article class="p-blog-card">
+          <div class="p-blog-card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=400&q=80" alt="ヨガリラックス" loading="lazy">
+          </div>
+          <div class="p-blog-card__body">
+            <div class="p-blog-card__meta">
+              <time class="p-blog-card__date">2026.04.19</time>
+              <span class="p-blog-card__tag">長門店</span>
+            </div>
+            <h3 class="p-blog-card__title">【長門店】春のデトックススタジオヨガ！体の中をスッキリさせる呼吸法</h3>
+            <p style="font-size: 0.85rem; color: var(--color-slate-gray); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+              長門店大人気のヨガインストラクターによる特別レッスン。呼吸と身体のひねり動作を連動させ、冷え解消やデトックス効果を高めるポーズをご紹介。
+            </p>
+            <a href="#" class="p-blog-card__link">記事を読む</a>
+          </div>
+        </article>
+
+        <!-- Post 6 -->
+        <article class="p-blog-card">
+          <div class="p-blog-card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=400&q=80" alt="トレーニング" loading="lazy">
+          </div>
+          <div class="p-blog-card__body">
+            <div class="p-blog-card__meta">
+              <time class="p-blog-card__date">2026.04.12</time>
+              <span class="p-blog-card__tag">お役立ち情報</span>
+            </div>
+            <h3 class="p-blog-card__title">プール運動で膝・腰に優しくダイエット！アクアフィットネスの効果</h3>
+            <p style="font-size: 0.85rem; color: var(--color-slate-gray); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+              関節への負担を約9割も削減できる水中ウォーキング。ダイエットや体力維持に効果的なプールレッスンの活用法をご紹介。
+            </p>
+            <a href="#" class="p-blog-card__link">記事を読む</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Pagination (Modern glass indicators) -->
+      <div style="display: flex; gap: 0.75rem; justify-content: center; align-items: center;">
+        <span style="width: 40px; height: 40px; border-radius: 50%; background: var(--grad-splashtop); color: white; display: flex; align-items: center; justify-content: center; font-family: var(--font-num); font-weight: 800; font-size: 0.95rem; cursor: pointer; box-shadow: var(--shadow-glow-hagi);">1</span>
+        <span style="width: 40px; height: 40px; border-radius: 50%; background: var(--color-bg-white); border: 1px solid var(--color-border); color: var(--color-slate-gray); display: flex; align-items: center; justify-content: center; font-family: var(--font-num); font-weight: 800; font-size: 0.95rem; cursor: pointer; transition: var(--transition-fast);" onmouseover="this.style.borderColor='var(--color-primary)'; this.style.color='var(--color-primary)'" onmouseout="this.style.borderColor='var(--color-border)'; this.style.color='var(--color-slate-gray)'">2</span>
+        <span style="width: 40px; height: 40px; border-radius: 50%; background: var(--color-bg-white); border: 1px solid var(--color-border); color: var(--color-slate-gray); display: flex; align-items: center; justify-content: center; font-family: var(--font-num); font-weight: 800; font-size: 0.95rem; cursor: pointer; transition: var(--transition-fast);" onmouseover="this.style.borderColor='var(--color-primary)'; this.style.color='var(--color-primary)'" onmouseout="this.style.borderColor='var(--color-border)'; this.style.color='var(--color-slate-gray)'">3</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     FOOTER SECTION (Modern Glass Columns)
+     ========================================================================== -->
+  <footer class="l-footer">
+    <div class="l-container">
+      <div class="l-footer__top">
+        <div class="l-footer__about">
+          <div class="l-footer__logo">
+            <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.85rem; letter-spacing: -0.02em; color: var(--color-bg-white); display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+              <i class="fa-solid fa-sun" style="color: var(--color-iwami);"></i>
+              TAIYO
+            </span>
+          </div>
+          <p class="l-footer__desc">
+            株式会社太陽コミュニケーションズは、スイミングスクールおよび総合フィットネスクラブの運営を通じて、山口・島根エリアの健康づくりと心豊かなライフスタイルの創出に貢献します。
+          </p>
+        </div>
+
+        <div class="l-footer__grid">
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-hagi">萩店</h4>
+            <address class="l-footer__address">
+              〒758-0063<br>
+              山口県萩市大字山田字東沖田4286番地
+            </address>
+            <a href="tel:0838-25-5656" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0838-25-5656</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-hagi.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-nagato">長門店</h4>
+            <address class="l-footer__address">
+              〒759-4101<br>
+              山口県長門市東深川1394-1
+            </address>
+            <a href="tel:0837-22-1600" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0837-22-1600</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-nagato.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-hofu">防府店</h4>
+            <address class="l-footer__address">
+              〒747-0849<br>
+              山口県防府市西仁井令1丁目12-7
+            </address>
+            <a href="tel:0835-28-7588" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0835-28-7588</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-hofu.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="l-footer__col-title l-footer__col-iwami">石見店</h4>
+            <address class="l-footer__address">
+              〒698-0024<br>
+              島根県益田市駅前町37-13
+            </address>
+            <a href="tel:0856-23-5581" class="l-footer__tel"><i class="fa-solid fa-phone" style="font-size: 0.8rem; margin-right: 0.25rem;"></i> 0856-23-5581</a>
+            <ul class="l-footer__list" style="margin-top: 1rem;">
+              <li><a href="./shop-iwami.html" class="l-footer__link">店舗トップ・料金表</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-footer__bottom">
+        <small class="l-footer__copyright">&copy; 株式会社太陽コミュニケーションズ 太陽フィットネスクラブ. All Rights Reserved.</small>
+        
+        <div class="l-footer__sns">
+          <a href="#" class="l-footer__sns-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="color: var(--color-bg-white);"></i></a>
+          <a href="#" class="l-footer__sns-link" aria-label="Instagram"><i class="fa-brands fa-instagram" style="color: var(--color-bg-white);"></i></a>
+          <a href="#" class="l-footer__sns-link" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color: var(--color-bg-white);"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
