@@ -19,8 +19,8 @@
     .p-page-hero {
       position: relative;
       height: 360px;
-      background: linear-gradient(135deg, rgba(13, 109, 192, 0.9) 0%, rgba(15, 23, 42, 0.8) 100%), 
-                  url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+      background: linear-gradient(135deg, rgba(13, 109, 192, 0.6) 0%, rgba(226, 75, 139, 0.6) 100%), 
+                  url('./img/769363_m.jpg') no-repeat center center;
       background-size: cover;
       display: flex;
       align-items: center;
@@ -69,53 +69,87 @@
     <div class="l-container l-header__container">
       <div class="l-header__logo">
         <a href="./index.html">
-          <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.65rem; letter-spacing: -0.02em; color: var(--color-dark); display: flex; align-items: center; gap: 0.5rem;">
-            <i class="fa-solid fa-sun" style="color: var(--color-iwami); filter: drop-shadow(0 2px 8px rgba(255, 126, 65, 0.4));"></i>
-            TAIYO<span style="color: var(--color-primary); font-weight: 500; font-size: 0.95rem; letter-spacing: 0.1em; border-left: 2px solid var(--color-border); padding-left: 0.5rem; margin-left: 0.25rem;">FITNESS CLUB</span>
-          </span>
+          <img src="./img/logo.png" alt="太陽フィットネスクラブ" style="height: 52px; width: auto; transition: var(--transition-normal);">
         </a>
       </div>
       
       <nav class="l-header__nav" aria-label="メインナビゲーション">
         <ul class="p-global-nav">
           <li class="p-global-nav__item">
-            <a href="./index.html" class="p-global-nav__link">ホーム</a>
+            <a href="./index.html" class="p-global-nav__link">
+              <img src="./img/navi01.png" alt="ホーム">
+            </a>
           </li>
           <li class="p-global-nav__item">
-            <a href="./greeting.html" class="p-global-nav__link">代表挨拶</a>
+            <a href="./greeting.html" class="p-global-nav__link">
+              <img src="./img/navi02.png" alt="代表挨拶">
+            </a>
           </li>
           <li class="p-global-nav__item">
-            <a href="#" class="p-global-nav__link">店舗一覧 <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
-            <div class="p-global-nav__dropdown">
-              <ul class="p-dropdown-list">
-                <li class="p-dropdown-list__item"><a href="./shop-hagi.html">萩店</a></li>
-                <li class="p-dropdown-list__item"><a href="./shop-nagato.html">長門店</a></li>
-                <li class="p-dropdown-list__item"><a href="./shop-hofu.html">防府店</a></li>
-                <li class="p-dropdown-list__item"><a href="./shop-iwami.html">石見店</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="p-global-nav__item">
-            <a href="#" class="p-global-nav__link" style="color: var(--color-primary);">プログラム <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <a href="./shop-hagi.html" class="p-global-nav__link">
+              <img src="./img/navi03.png" alt="萩店">
+            </a>
             <div class="p-global-nav__dropdown">
               <ul class="p-dropdown-list">
                 <li class="p-dropdown-list__item"><a href="./program-child.html">こどもスクール</a></li>
-                <li class="p-dropdown-list__item"><a href="./program-adult.html" style="color: var(--color-primary);">大人スクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./program-adult.html">大人スクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./campaign.html">キャンペーン</a></li>
+                <li class="p-dropdown-list__item"><a href="./blog.html">ブログ</a></li>
               </ul>
             </div>
           </li>
           <li class="p-global-nav__item">
-            <a href="./campaign.html" class="p-global-nav__link">キャンペーン</a>
+            <a href="./shop-nagato.html" class="p-global-nav__link">
+              <img src="./img/navi04.png" alt="長門店">
+            </a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./program-child.html">こどもスクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./program-adult.html">大人スクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./campaign.html">キャンペーン</a></li>
+                <li class="p-dropdown-list__item"><a href="./blog.html">ブログ</a></li>
+              </ul>
+            </div>
           </li>
           <li class="p-global-nav__item">
-            <a href="./blog.html" class="p-global-nav__link">スタッフブログ</a>
+            <a href="./shop-hofu.html" class="p-global-nav__link">
+              <img src="./img/navi05.png" alt="防府店">
+            </a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./program-child.html">こどもスクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./program-adult.html">大人スクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./campaign.html">キャンペーン</a></li>
+                <li class="p-dropdown-list__item"><a href="./blog.html">ブログ</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./shop-iwami.html" class="p-global-nav__link">
+              <img src="./img/navi06.png" alt="石見店">
+            </a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./program-child.html">こどもスクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./program-adult.html">大人スクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./campaign.html">キャンペーン</a></li>
+                <li class="p-dropdown-list__item"><a href="./blog.html">ブログ</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link">
+              <img src="./img/navi07.png" alt="インフォメーション">
+            </a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./business.html">連携事業</a></li>
+                <li class="p-dropdown-list__item"><a href="./recruit.html">採用情報</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
       </nav>
-
-      <a href="./recruit.html" class="l-header__cta">
-        採用情報 <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem; font-size: 0.8rem;"></i>
-      </a>
 
       <!-- Mobile Hamburger button -->
       <div class="l-header__hamburger" id="hamburger" aria-expanded="false" aria-label="メニューを開閉する">
@@ -144,7 +178,7 @@
         <span class="p-mobile-nav__link" style="opacity: 0.5; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-top: 1rem;">プログラム</span>
         <ul class="p-mobile-nav__sublist">
           <li><a href="./program-child.html" class="p-mobile-nav__sublink">こどもスクール</a></li>
-          <li><a href="./program-adult.html" class="p-mobile-nav__sublink" style="color: var(--color-primary);">大人スクール</a></li>
+          <li><a href="./program-adult.html" class="p-mobile-nav__sublink">大人スクール</a></li>
         </ul>
       </li>
       <li><a href="./campaign.html" class="p-mobile-nav__link">キャンペーン</a></li>
@@ -189,7 +223,7 @@
           </p>
         </div>
         <div>
-          <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80" alt="ヨガを教えるインストラクター" style="width: 100%; height: 350px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+          <img src="./img/top_box03_img.jpg" alt="ヨガを教えるインストラクター" style="width: 100%; height: 350px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
         </div>
       </div>
 
@@ -202,7 +236,7 @@
       <div class="l-grid l-grid--3col u-fade-up" style="gap: 2.5rem; margin-bottom: 6rem;">
         <!-- Area 1 -->
         <article class="p-pillar-card">
-          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80" alt="プールエリア" style="height: 200px; width: 100%; object-fit: cover;">
+          <img src="./img/top_box02_img02.jpg" alt="プールエリア" style="height: 200px; width: 100%; object-fit: cover;">
           <div style="padding: 2rem;">
             <h3 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 1rem; color: var(--color-primary);"><i class="fa-solid fa-water" style="margin-right: 0.5rem;"></i> 温水プールエリア</h3>
             <p style="font-size: 0.9rem; color: var(--color-slate-gray); margin-bottom: 1rem;">
@@ -213,7 +247,7 @@
 
         <!-- Area 2 -->
         <article class="p-pillar-card">
-          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=400&q=80" alt="ジムエリア" style="height: 200px; width: 100%; object-fit: cover;">
+          <img src="./img/ウェイト①.jpeg" alt="ジムエリア" style="height: 200px; width: 100%; object-fit: cover;">
           <div style="padding: 2rem;">
             <h3 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 1rem; color: var(--color-nagato);"><i class="fa-solid fa-dumbbell" style="margin-right: 0.5rem;"></i> マシンジムエリア</h3>
             <p style="font-size: 0.9rem; color: var(--color-slate-gray); margin-bottom: 1rem;">
@@ -224,7 +258,7 @@
 
         <!-- Area 3 -->
         <article class="p-pillar-card">
-          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=400&q=80" alt="スタジオエリア" style="height: 200px; width: 100%; object-fit: cover;">
+          <img src="./img/2026ヨーガ20ｈ-萩_page-0001-212x300.jpg" alt="スタジオエリア" style="height: 200px; width: 100%; object-fit: cover;">
           <div style="padding: 2rem;">
             <h3 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 1rem; color: var(--color-hofu);"><i class="fa-solid fa-spa" style="margin-right: 0.5rem;"></i> 専用フィットネススタジオ</h3>
             <p style="font-size: 0.9rem; color: var(--color-slate-gray); margin-bottom: 1rem;">

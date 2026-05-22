@@ -19,8 +19,8 @@
     .p-page-hero {
       position: relative;
       height: 360px;
-      background: linear-gradient(135deg, rgba(255, 126, 65, 0.9) 0%, rgba(15, 23, 42, 0.8) 100%), 
-                  url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+      background: linear-gradient(135deg, rgba(255, 126, 65, 0.6) 0%, rgba(13, 109, 192, 0.6) 100%), 
+                  url('./img/769363_m.jpg') no-repeat center center;
       background-size: cover;
       display: flex;
       align-items: center;
@@ -106,53 +106,87 @@
     <div class="l-container l-header__container">
       <div class="l-header__logo">
         <a href="./index.html">
-          <span style="font-family: var(--font-head); font-weight: 900; font-size: 1.65rem; letter-spacing: -0.02em; color: var(--color-dark); display: flex; align-items: center; gap: 0.5rem;">
-            <i class="fa-solid fa-sun" style="color: var(--color-iwami); filter: drop-shadow(0 2px 8px rgba(255, 126, 65, 0.4));"></i>
-            TAIYO<span style="color: var(--color-primary); font-weight: 500; font-size: 0.95rem; letter-spacing: 0.1em; border-left: 2px solid var(--color-border); padding-left: 0.5rem; margin-left: 0.25rem;">FITNESS CLUB</span>
-          </span>
+          <img src="./img/logo.png" alt="太陽フィットネスクラブ" style="height: 52px; width: auto; transition: var(--transition-normal);">
         </a>
       </div>
       
       <nav class="l-header__nav" aria-label="メインナビゲーション">
         <ul class="p-global-nav">
           <li class="p-global-nav__item">
-            <a href="./index.html" class="p-global-nav__link">ホーム</a>
+            <a href="./index.html" class="p-global-nav__link">
+              <img src="./img/navi01.png" alt="ホーム">
+            </a>
           </li>
           <li class="p-global-nav__item">
-            <a href="./greeting.html" class="p-global-nav__link">代表挨拶</a>
+            <a href="./greeting.html" class="p-global-nav__link">
+              <img src="./img/navi02.png" alt="代表挨拶">
+            </a>
           </li>
           <li class="p-global-nav__item">
-            <a href="#" class="p-global-nav__link">店舗一覧 <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
-            <div class="p-global-nav__dropdown">
-              <ul class="p-dropdown-list">
-                <li class="p-dropdown-list__item"><a href="./shop-hagi.html">萩店</a></li>
-                <li class="p-dropdown-list__item"><a href="./shop-nagato.html">長門店</a></li>
-                <li class="p-dropdown-list__item"><a href="./shop-hofu.html">防府店</a></li>
-                <li class="p-dropdown-list__item"><a href="./shop-iwami.html">石見店</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="p-global-nav__item">
-            <a href="#" class="p-global-nav__link">プログラム <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 0.25rem; opacity: 0.7;"></i></a>
+            <a href="./shop-hagi.html" class="p-global-nav__link">
+              <img src="./img/navi03.png" alt="萩店">
+            </a>
             <div class="p-global-nav__dropdown">
               <ul class="p-dropdown-list">
                 <li class="p-dropdown-list__item"><a href="./program-child.html">こどもスクール</a></li>
                 <li class="p-dropdown-list__item"><a href="./program-adult.html">大人スクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./campaign.html">キャンペーン</a></li>
+                <li class="p-dropdown-list__item"><a href="./blog.html">ブログ</a></li>
               </ul>
             </div>
           </li>
           <li class="p-global-nav__item">
-            <a href="./campaign.html" class="p-global-nav__link" style="color: var(--color-primary);">キャンペーン</a>
+            <a href="./shop-nagato.html" class="p-global-nav__link">
+              <img src="./img/navi04.png" alt="長門店">
+            </a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./program-child.html">こどもスクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./program-adult.html">大人スクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./campaign.html">キャンペーン</a></li>
+                <li class="p-dropdown-list__item"><a href="./blog.html">ブログ</a></li>
+              </ul>
+            </div>
           </li>
           <li class="p-global-nav__item">
-            <a href="./blog.html" class="p-global-nav__link">スタッフブログ</a>
+            <a href="./shop-hofu.html" class="p-global-nav__link">
+              <img src="./img/navi05.png" alt="防府店">
+            </a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./program-child.html">こどもスクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./program-adult.html">大人スクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./campaign.html">キャンペーン</a></li>
+                <li class="p-dropdown-list__item"><a href="./blog.html">ブログ</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="./shop-iwami.html" class="p-global-nav__link">
+              <img src="./img/navi06.png" alt="石見店">
+            </a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./program-child.html">こどもスクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./program-adult.html">大人スクール</a></li>
+                <li class="p-dropdown-list__item"><a href="./campaign.html">キャンペーン</a></li>
+                <li class="p-dropdown-list__item"><a href="./blog.html">ブログ</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="p-global-nav__item">
+            <a href="#" class="p-global-nav__link">
+              <img src="./img/navi07.png" alt="インフォメーション">
+            </a>
+            <div class="p-global-nav__dropdown">
+              <ul class="p-dropdown-list">
+                <li class="p-dropdown-list__item"><a href="./business.html">連携事業</a></li>
+                <li class="p-dropdown-list__item"><a href="./recruit.html">採用情報</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
       </nav>
-
-      <a href="./recruit.html" class="l-header__cta">
-        採用情報 <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem; font-size: 0.8rem;"></i>
-      </a>
 
       <!-- Mobile Hamburger button -->
       <div class="l-header__hamburger" id="hamburger" aria-expanded="false" aria-label="メニューを開閉する">
@@ -184,7 +218,7 @@
           <li><a href="./program-adult.html" class="p-mobile-nav__sublink">大人スクール</a></li>
         </ul>
       </li>
-      <li><a href="./campaign.html" class="p-mobile-nav__link" style="color: var(--color-primary);">キャンペーン</a></li>
+      <li><a href="./campaign.html" class="p-mobile-nav__link">キャンペーン</a></li>
       <li><a href="./blog.html" class="p-mobile-nav__link">ブログ</a></li>
       <li><a href="./recruit.html" class="p-mobile-nav__link" style="color: var(--color-nagato);">採用情報</a></li>
     </ul>
@@ -216,7 +250,7 @@
       
       <!-- Campaign 1: Child -->
       <div class="p-camp-card u-fade-up">
-        <div style="background: linear-gradient(135deg, rgba(13, 109, 192, 0.8) 0%, rgba(0, 194, 146, 0.8) 100%), url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=600&q=80') center center; background-size: cover; padding: 3rem; color: white; display: flex; flex-direction: column; justify-content: center; min-height: 350px;">
+        <div style="background: linear-gradient(135deg, rgba(13, 109, 192, 0.8) 0%, rgba(0, 194, 146, 0.8) 100%), url('./img/22054873_m-1.jpg') center center; background-size: cover; padding: 3rem; color: white; display: flex; flex-direction: column; justify-content: center; min-height: 350px;">
           <span style="font-family: var(--font-head); font-weight: 800; font-size: 0.9rem; letter-spacing: 0.1em; color: var(--color-iwami); text-transform: uppercase;">For Kids</span>
           <h2 style="font-size: 2rem; font-weight: 900; color: white; margin-bottom: 1rem;">こどもスイミングスクール<br>1日無料体験レッスン</h2>
           <p style="font-size: 0.95rem; opacity: 0.9;">実際のこどもクラスに一緒に混ざって、楽しいレッスンを体験できます。水慣れの基礎からプロコーチが優しくサポート。</p>
@@ -234,7 +268,7 @@
 
       <!-- Campaign 2: Adult -->
       <div class="p-camp-card u-fade-up">
-        <div style="background: linear-gradient(135deg, rgba(226, 75, 139, 0.8) 0%, rgba(255, 126, 65, 0.8) 100%), url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80') center center; background-size: cover; padding: 3rem; color: white; display: flex; flex-direction: column; justify-content: center; min-height: 350px;">
+        <div style="background: linear-gradient(135deg, rgba(226, 75, 139, 0.8) 0%, rgba(255, 126, 65, 0.8) 100%), url('./img/ウェイト①.jpeg') center center; background-size: cover; padding: 3rem; color: white; display: flex; flex-direction: column; justify-content: center; min-height: 350px;">
           <span style="font-family: var(--font-head); font-weight: 800; font-size: 0.9rem; letter-spacing: 0.1em; color: var(--color-dark); text-transform: uppercase;">For Adults</span>
           <h2 style="font-size: 2rem; font-weight: 900; color: white; margin-bottom: 1rem;">大人フィットネスメンバー<br>施設お試し体験</h2>
           <p style="font-size: 0.95rem; opacity: 0.9;">温水プールでの自由遊泳、ジムマシンエリアの使い放題、各種ヨガスタジオプログラムをお気軽にお試しいただけます。</p>
